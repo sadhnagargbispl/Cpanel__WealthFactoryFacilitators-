@@ -1,0 +1,416 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        <%=Session["Title"]%></title>
+
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+
+    <noscript>
+        <div style="color: red">
+            To be able to access all of our features, you need a browser that supports JavaScript,
+            and it needs to be enabled.
+        </div>
+    </noscript>
+    <meta content="width=device-width, initial-scale=1,user-scalable=yes" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="./dashboard_files/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <!--<link rel="stylesheet" href="./dashboard_files/font-awesome.min.css"> -->
+    <!-- Ionicons -->
+    <!--<link rel="stylesheet" href="./dashboard_files/ionicons.min.css"> -->
+    <link rel="icon" type="image/png" href="dashboard_files/favicon.png">
+
+    <link rel="stylesheet" href="./dashboard_files/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="./dashboard_files/datepicker3.css">
+    <link rel="stylesheet" href="./dashboard_files/AdminLTE.css">
+    <link rel="stylesheet" href="./dashboard_files/_all-skins.css">
+    <link href="./dashboard_files/select2.css" rel="stylesheet">
+    <link href="dashboard_files/style.css" rel="stylesheet">
+
+
+    <script type="text/javascript">
+
+
+
+
+
+        function confirmation() {
+            if (confirm('Are you sure about this action ?')) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+    </script>
+
+    <script type="text/javascript" src="highslide/highslide-full.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+
+    <script type="text/javascript">
+        hs.graphicsDir = 'highslide/graphics/';
+        hs.align = 'center';
+        hs.transitions = ['expand', 'crossfade'];
+        hs.fadeInOut = true;
+        hs.dimmingOpacity = 0.8;
+        hs.outlineType = 'rounded-white';
+        hs.marginTop = 60;
+        hs.marginBottom = 40;
+        hs.numberPosition = '';
+        hs.wrapperClassName = 'custom';
+        hs.width = 600;
+        hs.height = 500;
+        hs.number = 'Page %1 of %2';
+        hs.captionOverlay.fade = 0;
+
+        // Add the slideshow providing the controlbar and the thumbstrip
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="skin-blue sidebar-mini" data-new-gr-c-s-check-loaded="14.1026.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div>
+            <div class="wrapper">
+                <header class="main-header">
+                    <a href="#" class="logo"><span class="logo-mini">
+                        <img src="<%=Session["LogoUrl"].ToString ()%>" style="width: 200px;"></span> <span class="logo-lg">
+                            <img src="<%=Session["LogoUrl"].ToString ()%>" alt="logo" style="max-width: 115px; width: 250px;">
+                        </span></a>
+                    <nav class="navbar navbar-static-top" role="navigation">
+                        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle navigation</span> </a>
+                        <!-- Navbar Right Menu -->
+                        <div class="navbar-custom-menu">
+                            <% if (Session["Status"] != null && Session["Status"].ToString() == "OK")
+                                { %>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown messages-menu" style="margin-top: 10px; margin-right: 13px; text-align: center;">
+
+                                    <asp:Label ID="lblLiveRate" runat="server" Text="" Font-Size="16px"></asp:Label>
+                                    </button>
+                                </li>
+                                <li class="dropdown messages-menu"><a href="logout.aspx"><i class="glyphicon glyphicon-off"></i><span class="label label-success"></span></a></li>
+                            </ul>
+                            <% } %>
+                        </div>
+                    </nav>
+                </header>
+                <aside class="main-sidebar">
+                    <section class="sidebar">
+                        <div class="user-panel" style="background: #2b93bc;">
+                            <div class="pull-left image">
+
+                                <a href="ProfilePicUploader.aspx" onclick="return hs.htmlExpand(this, { objectType: 'iframe',width: 785,height: 580,marginTop : 0 } )">
+                                    <asp:Image ID="Image2" runat="server" Style="border-radius: 30%; height: 40px" class="rounded-circle" />
+                                </a>
+                            </div>
+                            <div class="pull-left info">
+                                <p>
+                                    <strong>
+                                        <asp:Label ID="LblName" runat="server"></asp:Label>
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        <asp:Label ID="Lbldate" runat="server"></asp:Label>
+                                    </strong>
+                                </p>
+
+                            </div>
+                        </div>
+                        <% if (Session["Status"] != null && Session["Status"].ToString() == "OK")
+                            { %>
+                        <ul class="sidebar-menu" style="font-size: 12px;">
+
+                            <li class="treeview active"><a href="Index.aspx">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-tachometer-alt fa-spin-hover"></i></div>
+                                </div>
+                                <span>DASHBOARD</span> </a></li>
+
+
+
+                            <li class="treeview"><a href="Index.aspx">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-user-friends fa-spin-hover"></i></div>
+                                </div>
+                                <span>PROFILE </span><i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="NewJoining1.aspx"><i class="fa fa-circle-o"></i>New Registration</a> </li>
+                                    <li><a href="profile.aspx"><i class="fa fa-arrow-right"></i>Profile</a></li>
+
+                                    <li><a href="ChangePass.aspx"><i class="fa fa-arrow-right"></i>Change Password</a></li>
+                                    <li><a href="ChangeTransPass.aspx"><i class="fa fa-arrow-right"></i>Change Trans. Password</a></li>
+                                </ul>
+                            </li>
+                            <li class="treeview"><a href="#">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-wallet fa-spin-hover"></i></div>
+                                </div>
+                                <span>UPLOAD KYC</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+
+                                    <li><a href="KycbankDetail_New.aspx"><i class="fa fa-arrow-right"></i>Bank Detail</a></li>
+                                </ul>
+
+                            </li>
+
+
+
+                            <li class="treeview"><a href="IdActivation.aspx">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-tachometer-alt fa-spin-hover"></i></div>
+                                </div>
+                                <span>Activation/Upgrade</span> </a></li>
+
+
+                            <li class="treeview"><a href="#">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-book fa-spin-hover"></i></div>
+                                </div>
+                                <span>DOCUMENTS</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="welcome.aspx"><i class="fa fa-arrow-right"></i>Welcome Letter</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="treeview"><a href="#">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-users fa-spin-hover"></i></div>
+                                </div>
+                                <span>MY TEAM</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="MyDirectReport.aspx"><i class="fa fa-arrow-right"></i>My Directs</a></li>
+                                    <li><a href="NewTree.aspx"><i class="fa fa-arrow-right"></i>Tree View</a></li>
+                                    <li><a href="Mydirects.aspx"><i class="fa fa-arrow-right"></i>My Own Team Report</a></li>
+                                    <li><a href="TeamInvestment.aspx"><i class="fa fa-arrow-right"></i>Team Business</a></li>
+                                </ul>
+                            </li>
+                            <li class="treeview"><a href="#">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="far fa-lightbulb fa-spin-hover"></i></div>
+                                </div>
+                                <span>MY INCENTIVE</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="DailySelfIncome.aspx"><i class="fa fa-arrow-right"></i>Daily Payout</a></li>
+                                    <li><a href="Reward.aspx"><i class="fa fa-arrow-right"></i>Rank </a></li>
+                                    <li><a href="RewardAchieve.aspx"><i class="fa fa-arrow-right"></i>Reward </a></li>
+                                </ul>
+                            </li>
+                            <li class="treeview"><a href="#">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-wallet fa-spin-hover"></i></div>
+                                </div>
+                                <span>WALLET</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="Accounts.aspx"><i class="fa fa-arrow-right"></i>Main Wallet Report</a></li>
+                                    <li><a href="ShoppingWallet.aspx"><i class="fa fa-arrow-right"></i>Topup Wallet Report</a></li>
+                                    <li><a href="ShoppingWalletTransfer.aspx"><i class="fa fa-arrow-right"></i>Main To Topup Wallet Transfer</a></li>
+                                    <li><a href="WalletRequest.aspx"><i class="fa fa-arrow-right"></i>Add Fund</a></li>
+                                    <li><a href="WalletRequestDetail.aspx"><i class="fa fa-arrow-right"></i>Add Fund Detail</a></li>
+                                    <li id="lifund" runat="server" visible="true"><a href="FundWithdraw.aspx"><i class="fa fa-arrow-right"></i>Withdrawal</a></li>
+                                    <li><a href="Rptwithdrawls.aspx"><i class="fa fa-arrow-right"></i>Withdrawal Detail</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="treeview"><a href="#">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="far fa-list-alt fa-spin-hover"></i></div>
+                                </div>
+                                <span>Our portal</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="ShoppingRedirect.aspx"><i class="fa fa-arrow-right"></i>Shopping Portal</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <li class="treeview"><a href="#">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="far fa-list-alt fa-spin-hover"></i></div>
+                                </div>
+                                <span>COMPLAINT</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="Complain.aspx"><i class="fa fa-arrow-right"></i>Raise Ticket</a></li>
+                                    <li><a href="ComplainSolution.aspx"><i class="fa fa-arrow-right"></i>My Ticket Status</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="logout.aspx">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-sign-out-alt fa-spin-hover"></i></div>
+                                </div>
+                                <span>SIGN OUT</span> </a></li>
+                        </ul>
+                        <% }
+                        else
+                        { %>
+                        <ul class="sidebar-menu" style="font-size: 12px;">
+                            <li><a href="NewJoining1.aspx">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-sign-out-alt fa-spin-hover"></i></div>
+                                </div>
+                                <span>SIGN UP</span> </a></li>
+
+                            <li><a href="Default.aspx">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-sign-out-alt fa-spin-hover"></i></div>
+                                </div>
+                                <span>SIGN IN</span> </a></li>
+
+                        </ul>
+                        <% }%>
+                    </section>
+                </aside>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <footer class="main-footer">
+
+                    <strong><a href="http://cmayds.com/" style="color: black;" target="_blank">Copyright ©
+                        <asp:Label ID="lblComapnyNAme" runat="server" Text=""></asp:Label>
+                        - All Rights Reserved. </a></strong>
+                </footer>
+            </div>
+        </div>
+    </form>
+</body>
+
+<script>
+    function myFunction() {
+        var copyText = document.getElementById("referral-link");
+        copyText.select();
+        document.execCommand("copy");
+
+        var tooltip = document.getElementById("refcopy");
+        tooltip.innerHTML = "Copied: " + copyText.value;
+    }
+
+    function outFunc() {
+        var tooltip = document.getElementById("refcopy");
+        tooltip.innerHTML = "Copy to clipboard";
+    }
+</script>
+
+<script src="./dashboard_files/jQuery-2.1.4.min.js"></script>
+
+<script src="./dashboard_files/select2.min.js"></script>
+
+<script src="./dashboard_files/bootstrap.min.js"></script>
+
+<script src="./dashboard_files/jquery.dataTables.min.js"></script>
+
+<script src="./dashboard_files/dataTables.bootstrap.min.js"></script>
+
+<script src="./dashboard_files/bootstrap-datepicker.js"></script>
+
+<!--<script src="./dashboard_files/jquery.slimscroll.min.js"></script> -->
+
+<script src="./dashboard_files/fastclick.min.js"></script>
+
+<script src="./dashboard_files/app.min.js"></script>
+
+<script src="./dashboard_files/demo.js"></script>
+
+<script>
+    $(document).on('focus', ':input', function () {
+        $(this).attr('autocomplete', 'off');
+    });
+    $(function () {
+        $("#txtdepositDate").datepicker();
+    });
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".meanmenu-reveal").click(function () {
+            $("nav.mean-nav").toggleClass("show");
+        });
+    });
+
+    $(document).ready(function () {
+        $(".rad-toggle-btn").click(function () {
+            $(".rad-logo-container").toggleClass("rad-nav-min");
+            $(".rad-sidebar").toggleClass("rad-nav-min");
+            $(".rad-body-wrapper").toggleClass("rad-nav-min");
+        });
+
+        $(".rad-menu-item").click(function () {
+            $(".rad-dropmenu-item").toggleClass("active");
+        });
+
+    });
+
+    $(document).ready(function () {
+        if ($(window).width() < 769) {
+            $('#menu').addClass('rad-nav-min');
+        } else {
+            $('#menu').removeClass('rad-nav-min');
+        }
+    });
+
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".select2").select2();
+    });
+
+
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": false,
+            "info": true,
+            "autoWidth": false,
+            "scrollX": true
+        });
+    });
+
+    //Date picker
+    $('#datepicker').datepicker({
+        autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+        autoclose: true
+    })
+</script>
+</html>

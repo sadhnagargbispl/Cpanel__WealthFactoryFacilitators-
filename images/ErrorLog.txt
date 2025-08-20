@@ -1,0 +1,1164 @@
+http://localhost:57316/FXtrade/index.aspx:  12-Mar-2021 02:40:44:180 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'NewsDetail'.
+--------------------------------------------------------
+http://localhost:57316/FXtrade/index.aspx:  12-Mar-2021 02:46:29:560 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'NewsDetail'.
+--------------------------------------------------------
+http://localhost:57316/FXtrade/NewJoining1.aspx:  12-Mar-2021 03:21:31:989 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:57316/FXtrade/NewJoining1.aspx:  12-Mar-2021 04:19:07:348 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:57316/FXtrade/index.aspx:  12-Mar-2021 04:53:07:178 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57316/FXtrade/index.aspx:  12-Mar-2021 05:33:20:317 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57316/FXtrade/index.aspx:  13-Mar-2021 11:22:17:853 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'NewsDetail'.
+--------------------------------------------------------
+http://localhost:57316/FXtrade/Index.aspx:  13-Mar-2021 11:23:14:227 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'NewsDetail'.
+--------------------------------------------------------
+http://localhost:57316/FXtrade/index.aspx:  13-Mar-2021 12:17:11:540 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57316/FXtrade/index.aspx:  13-Mar-2021 12:17:11:564 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/profile.aspx:  15-Mar-2021 05:14:58:374 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52370/FrxTradingDistributorPanel/index.aspx:  18-Mar-2021 06:16:57:021 
+Filter expression '0' does not evaluate to a Boolean term.
+--------------------------------------------------------
+http://localhost:52370/FrxTradingDistributorPanel/index.aspx:  18-Mar-2021 06:19:44:626 
+Filter expression '0' does not evaluate to a Boolean term.
+--------------------------------------------------------
+http://localhost:52370/FrxTradingDistributorPanel/Idactivation.aspx:  18-Mar-2021 08:59:23:515 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52370/FrxTradingDistributorPanel/IdActivation.aspx:  18-Mar-2021 09:06:07:744 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52370/FrxTradingDistributorPanel/IdActivation.aspx:  18-Mar-2021 09:31:39:917 
+Column 'Touppseq' does not belong to table .
+--------------------------------------------------------
+http://localhost:52370/FrxTradingDistributorPanel/IdActivation.aspx:  18-Mar-2021 09:33:00:789 
+Column 'Touppseq' does not belong to table .
+--------------------------------------------------------
+http://localhost:52370/FrxTradingDistributorPanel/IdActivation.aspx:  18-Mar-2021 09:39:12:836 
+Thread was being aborted.
+--------------------------------------------------------
+<<<<<<< HEAD
+http://localhost:52370/FrxTradingDistributorPanel/Profile.aspx:  25-Mar-2021 05:30:02:194 
+=======
+http://localhost:57833/FrxTradingDistributorPanel/welcome.aspx:  22-Mar-2021 06:21:06:941 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Downline.aspx:  22-Mar-2021 06:44:31:876 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/dailybinaryincome.aspx:  22-Mar-2021 07:08:24:577 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/DailyBinaryIncome.aspx:  22-Mar-2021 07:22:05:995 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/dailybinaryincome.aspx:  23-Mar-2021 10:56:43:572 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/index.aspx:  23-Mar-2021 10:57:52:976 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/DailyBinaryIncome.aspx:  23-Mar-2021 12:39:33:462 
+Thread was being aborted.
+--------------------------------------------------------
+<<<<<<< HEAD
+http://localhost:52370/FrxTradingDistributorPanel/IdActivation.aspx:  26-Mar-2021 08:40:03:385 
+=======
+http://localhost:57833/FrxTradingDistributorPanel/MyDirectReport.aspx:  26-Mar-2021 05:54:16:487 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/MyDirectReport.aspx:  26-Mar-2021 06:27:13:744 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/index.aspx:  26-Mar-2021 06:37:15:803 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/fundwithdraw.aspx:  27-Mar-2021 11:55:04:649 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/fundwithdraw.aspx:  27-Mar-2021 12:23:40:820 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/fundwithdraw.aspx:  27-Mar-2021 12:56:48:548 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/fundwithdraw.aspx:  27-Mar-2021 01:25:35:564 
+>>>>>>> f0014268e1b2571d232481bc302aff9c036e3afb
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/ClubIncome.aspx:  02-Apr-2021 03:01:04:487 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/ClubIncome.aspx:  02-Apr-2021 03:38:40:227 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'Payout Date'.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/fundwithdraw.aspx:  02-Jun-2021 11:30:03:155 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 11:57:01:816 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:04:27:162 
+A field or property with the name 'RDays' was not found on the selected data source.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:04:27:177 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:07:55:616 
+A field or property with the name 'Newpair' was not found on the selected data source.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:07:55:633 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:08:24:861 
+A field or property with the name 'Reward' was not found on the selected data source.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:08:24:873 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:08:46:579 
+A field or property with the name 'Reward' was not found on the selected data source.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:08:46:596 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:09:36:449 
+A field or property with the name 'Notimelimit' was not found on the selected data source.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:09:36:462 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:10:00:343 
+A field or property with the name 'Notimelimit' was not found on the selected data source.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 12:10:00:351 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 01:13:53:581 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/Reward.aspx:  02-Jun-2021 01:16:32:428 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58136/FrxTrading/index.aspx:  15-Jun-2021 02:38:49:855 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/index.aspx:  15-Jul-2021 11:57:51:060 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/index.aspx:  15-Jul-2021 12:04:47:692 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/index.aspx:  15-Jul-2021 01:45:31:277 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/IdActivation.aspx:  15-Jul-2021 04:40:41:674 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/IdActivation.aspx:  15-Jul-2021 04:55:43:110 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/IdActivation.aspx:  16-Jul-2021 03:32:28:828 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57833/FrxTradingDistributorPanel/IdActivation.aspx:  16-Jul-2021 06:52:42:641 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59684/FrxTradingDistributorPanel/index.aspx:  01-Aug-2021 12:39:39:838 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59684/FrxTradingDistributorPanel/index.aspx:  01-Aug-2021 12:42:55:006 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59684/FrxTradingDistributorPanel/index.aspx:  01-Aug-2021 12:46:21:848 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59684/FrxTradingDistributorPanel/ShoppingWallet.aspx:  01-Aug-2021 02:33:34:664 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59684/FrxTradingDistributorPanel/ComplainSolution.aspx:  10-Aug-2021 03:10:27:735 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59684/FrxTradingDistributorPanel/WeeklyBinaryIncome.aspx:  17-Aug-2021 12:07:54:839 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59684/FrxTradingDistributorPanel/IdActivation.aspx:  28-Oct-2021 04:02:20:031 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59684/FrxTradingDistributorPanel/IdActivation.aspx:  30-Dec-2021 07:46:26:640 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59684/FrxTradingDistributorPanel/IdActivation.aspx:  10-Jan-2022 07:10:10:938 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49976/FrxTradingDistributorPanel/FundWithdraw.aspx:  01-Mar-2022 05:08:06:425 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59905/HeadCoin/index.aspx:  08-Apr-2022 09:35:17:528 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59905/HeadCoin/index.aspx:  08-Apr-2022 11:17:03:468 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59905/HeadCoin/index.aspx:  08-Apr-2022 11:23:11:837 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59905/HeadCoin/index.aspx:  08-Apr-2022 11:26:27:455 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59905/HeadCoin/PoolGeneration.aspx:  12-Apr-2022 11:24:01:868 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59905/HeadCoin/NewTree.aspx:  12-Apr-2022 11:24:05:495 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59905/HeadCoin/index.aspx:  12-Apr-2022 11:28:26:719 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59905/HeadCoin/index.aspx:  12-Apr-2022 11:36:01:938 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  14-Apr-2022 05:18:07:309 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  14-Apr-2022 05:18:36:186 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52967/Head_Coin_Distributors/CoinRequest.aspx:  21-Apr-2022 03:45:39:291 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:52967/Head_Coin_Distributors/CoinRequest.aspx:  21-Apr-2022 03:46:55:663 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:52967/Head_Coin_Distributors/CoinRequestDetail.aspx:  21-Apr-2022 05:51:00:523 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:52967/Head_Coin_Distributors/CoinRequestDetail.aspx:  21-Apr-2022 05:53:11:719 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:52967/Head_Coin_Distributors/CoinRequestDetail.aspx:  21-Apr-2022 05:53:24:874 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/profile.aspx:  22-Apr-2022 12:19:36:702 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/index.aspx:  22-Apr-2022 12:22:52:268 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/index.aspx:  22-Apr-2022 12:24:16:550 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/index.aspx:  22-Apr-2022 12:32:29:938 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 01:43:39:859 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 02:03:26:803 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 02:04:24:145 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 02:08:01:819 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 02:09:05:131 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 02:11:13:490 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 02:12:20:859 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 02:13:42:426 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 02:17:38:226 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:52967/Head_Coin_Distributors/IdActivation.aspx:  22-Apr-2022 11:30:12:687 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/MyDirectReport.aspx:  23-Apr-2022 11:26:49:923 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  23-Apr-2022 12:56:07:260 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/downline.aspx:  25-Apr-2022 02:17:16:083 
+Cannot find column 6.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/downline.aspx:  25-Apr-2022 02:18:42:743 
+Cannot find column 6.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/downline.aspx:  25-Apr-2022 02:19:43:088 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/downline.aspx:  25-Apr-2022 02:19:43:095 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/downline.aspx:  25-Apr-2022 02:21:30:433 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/downline.aspx:  25-Apr-2022 02:21:30:443 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/downline.aspx:  25-Apr-2022 02:21:57:552 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/downline.aspx:  25-Apr-2022 02:21:57:557 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/NewTree.aspx:  25-Apr-2022 02:46:29:731 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Welcome.Aspx?IDNo=HC53257646:  26-Apr-2022 04:56:19:505 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:10692/Head_Coin_Distributors/DailyMatchingBonus.aspx:  28-Apr-2022 09:38:43:155 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  29-Apr-2022 12:07:38:115 
+Value cannot be null.
+Parameter name: address
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/DailyMatchingBonus.aspx:  29-Apr-2022 03:14:15:467 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/welcome.aspx:  29-Apr-2022 03:49:43:798 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Newjoining1.aspx:  02-May-2022 11:32:25:047 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+<<<<<<< Updated upstream
+http://localhost:51833/Head_Coin_Distributors/index.aspx:  02-May-2022 01:00:34:285 
+Argument 'Expression' cannot be converted to type 'DBNull'.
+=======
+http://localhost:50212/Head_Coin_Distributors/DailyReferralBonus.aspx:  02-May-2022 03:36:07:436 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50212/Head_Coin_Distributors/index.aspx:  02-May-2022 04:17:56:406 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50212/Head_Coin_Distributors/DailyMatchingBonus.aspx:  02-May-2022 05:10:00:080 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50212/Head_Coin_Distributors/DailyMatchingBonus.aspx:  02-May-2022 05:37:49:161 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50212/Head_Coin_Distributors/DailyMatchingBonus.aspx:  02-May-2022 06:04:09:517 
+Thread was being aborted.
+>>>>>>> Stashed changes
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  20-May-2022 12:34:05:784 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  20-May-2022 12:34:18:115 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  20-May-2022 02:36:25:105 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  20-May-2022 02:36:27:854 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/CoinRequest.aspx:  21-May-2022 12:38:04:355 
+Conversion from string "" to type 'Date' is not valid.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/CoinRequest.aspx:  21-May-2022 12:39:51:798 
+Conversion from string "" to type 'Date' is not valid.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/CoinRequest.aspx:  21-May-2022 12:42:04:997 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/CoinRequest.aspx:  21-May-2022 12:42:05:083 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/CoinRequest.aspx:  21-May-2022 12:42:05:099 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  21-May-2022 03:23:23:982 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/WalletRequest.aspx:  21-May-2022 05:31:11:580 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/WalletRequest.aspx:  21-May-2022 05:31:11:585 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/WalletRequest.aspx:  21-May-2022 05:31:11:590 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  23-May-2022 12:34:52:110 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  23-May-2022 12:36:14:073 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/GoldCoinRequest.aspx:  24-May-2022 12:24:02:977 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/GoldCoinRequest.aspx:  24-May-2022 12:38:16:493 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/GoldCoinRequestDetail.aspx:  24-May-2022 01:22:18:224 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/Index.aspx:  24-May-2022 05:06:22:543 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  24-May-2022 05:10:16:648 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  24-May-2022 05:19:03:125 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/Index.aspx:  24-May-2022 05:36:59:563 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/Index.aspx:  24-May-2022 05:36:59:601 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  24-May-2022 05:36:59:622 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  24-May-2022 05:38:47:832 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'NewsDate'.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  24-May-2022 05:39:22:284 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'NewsDate'.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  24-May-2022 05:40:12:050 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'NewsDetail'.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  24-May-2022 05:40:46:009 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'NewsDate'.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/Index.aspx:  28-May-2022 11:12:05:097 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail.aspx:  28-May-2022 11:50:47:428 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  28-May-2022 11:56:07:996 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/iddetail.aspx:  28-May-2022 12:01:29:442 
+'DDlVillage' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/iddetail.aspx:  28-May-2022 12:03:13:904 
+'DDlVillage' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/iddetail.aspx:  28-May-2022 12:07:21:695 
+'DDlVillage' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  28-May-2022 12:17:25:978 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  28-May-2022 12:17:49:676 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  28-May-2022 12:18:26:149 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  28-May-2022 12:18:30:029 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  28-May-2022 12:22:20:298 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  28-May-2022 12:22:41:629 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  28-May-2022 12:23:10:983 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/NewJoining1.aspx:  28-May-2022 12:39:12:009 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/NewJoining1.aspx:  28-May-2022 12:43:18:803 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/NewJoining1.aspx:  28-May-2022 12:45:38:743 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/NewJoining1.aspx:  28-May-2022 01:04:21:533 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/Welcome.Aspx?IDNo=HC71368573:  28-May-2022 01:50:26:796 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  28-May-2022 01:51:20:675 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/index.aspx:  28-May-2022 02:14:55:785 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/Index.aspx:  31-May-2022 10:41:47:679 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  31-May-2022 11:16:27:260 
+Conversion from string "" to type 'Boolean' is not valid.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  31-May-2022 11:19:24:585 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  31-May-2022 11:30:42:409 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/GoldCoinRequest.aspx:  31-May-2022 01:12:14:066 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/GoldCoinRequest.aspx:  31-May-2022 01:14:11:038 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/GoldCoinRequest.aspx:  31-May-2022 01:14:11:046 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/GoldCoinRequest.aspx:  31-May-2022 01:14:11:054 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/KycbankDetail_New.aspx:  31-May-2022 01:49:12:078 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/iddetail.aspx:  31-May-2022 03:18:10:955 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/FundWithdraw.aspx:  31-May-2022 05:52:59:979 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/Index.aspx:  31-May-2022 05:53:00:039 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:62382/Head_Coin_Distributors/FundWithdraw.aspx:  02-Jun-2022 10:38:28:788 
+Thread was being aborted.
+--------------------------------------------------------
+<<<<<<< HEAD
+http://localhost:51833/Head_Coin_Distributors/FundWithdraw.aspx:  03-Jun-2022 11:55:37:184 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/FundWithdraw.aspx:  03-Jun-2022 11:58:34:422 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+=======
+http://localhost:62382/Head_Coin_Distributors/FundWithdraw.aspx:  02-Jun-2022 04:43:58:373 
+Thread was being aborted.
+>>>>>>> 18942ccc52aefd2280498045066e11c5333e9d30
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/FundWithdraw.aspx:  17-Jun-2022 05:35:45:892 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/index.aspx:  29-Jun-2022 11:29:01:786 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/index.aspx:  29-Jun-2022 11:41:11:594 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/index.aspx:  29-Jun-2022 12:29:29:085 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/index.aspx:  29-Jun-2022 01:34:00:660 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/Index.aspx:  29-Jun-2022 02:03:38:012 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/index.aspx:  29-Jun-2022 02:37:48:205 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/index.aspx:  29-Jun-2022 03:55:21:219 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/index.aspx:  04-Jul-2022 11:49:33:025 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/MyDirectReport.aspx:  04-Jul-2022 12:11:01:175 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'Rank'.
+--------------------------------------------------------
+http://localhost:53844/Head_Coin_Distributors/MyDirectReport.aspx:  04-Jul-2022 12:11:01:200 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52376/Head_Coin_Distributors/index.aspx:  22-Jul-2022 11:18:35:121 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:52376/Head_Coin_Distributors/index.aspx:  22-Jul-2022 11:20:05:501 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:52376/Head_Coin_Distributors/Index.aspx:  22-Jul-2022 11:21:36:717 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:52376/Head_Coin_Distributors/Index.aspx:  22-Jul-2022 11:22:35:793 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:59086/Head_Coin_Distributors/GoldCoinRequest.aspx:  22-Jul-2022 12:50:40:271 
+Conversion from type 'DBNull' to type 'Integer' is not valid.
+--------------------------------------------------------
+http://localhost:59086/Head_Coin_Distributors/GoldCoinRequest.aspx:  22-Jul-2022 12:52:04:264 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:59086/Head_Coin_Distributors/GoldCoinRequest.aspx:  22-Jul-2022 12:58:56:263 
+Conversion from type 'DBNull' to type 'Integer' is not valid.
+--------------------------------------------------------
+http://localhost:59086/Head_Coin_Distributors/GoldCoinRequest.aspx:  22-Jul-2022 01:01:53:809 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:59086/Head_Coin_Distributors/GoldCoinRequest.aspx:  22-Jul-2022 01:10:35:712 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:59086/Head_Coin_Distributors/GoldCoinRequest.aspx:  22-Jul-2022 01:13:35:299 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Reward.aspx:  24-Sep-2022 12:36:01:674 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/iddetail.aspx:  07-Oct-2022 02:03:31:213 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 11:22:32:943 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 12:00:22:840 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 12:36:12:727 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 01:05:49:614 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 01:39:42:252 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/index.aspx:  09-Nov-2022 01:40:24:945 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 01:43:31:852 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 02:47:10:067 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 03:21:05:171 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 03:23:53:157 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 04:29:29:385 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 05:18:54:610 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 05:41:05:103 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 06:09:42:799 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:49825/Head_Coin_Distributors/Index.aspx:  09-Nov-2022 06:09:54:002 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  21-Nov-2022 03:55:36:546 
+Value was either too large or too small for an Int32.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  21-Nov-2022 03:56:32:952 
+Value was either too large or too small for an Int32.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  21-Nov-2022 03:59:00:979 
+Value was either too large or too small for an Int32.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  21-Nov-2022 04:12:08:466 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/TestBuy.aspx:  28-Nov-2022 05:36:42:662 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/TestBuy.aspx:  28-Nov-2022 05:44:16:403 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:51833/Head_Coin_Distributors/Buy.aspx:  30-Nov-2022 03:37:03:007 
+The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:37:35:770 
+Invalid object name 'M_CoinMaster'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:37:38:545 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:37:45:716 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'WalletName'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:44:13:579 
+Invalid object name 'M_CoinMaster'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:44:16:445 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:44:22:297 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'WalletName'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/Index.aspx:  01-Dec-2022 05:49:29:188 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:49:38:312 
+Invalid object name 'M_CoinMaster'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:49:40:755 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:56:42:520 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'WalletName'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:57:00:187 
+Invalid object name 'M_CoinMaster'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:57:13:388 
+Column 'MatchingBonus' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:57:33:700 
+Invalid object name 'M_CoinMaster'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  01-Dec-2022 05:57:56:959 
+Invalid object name 'M_CoinMaster'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/Welcome.Aspx?IDNo=MST472617:  01-Dec-2022 06:08:58:163 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/Mydirects.aspx:  02-Dec-2022 11:20:30:217 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'Rank'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/Mydirects.aspx:  02-Dec-2022 11:24:27:948 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'Rank'.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 11:40:05:293 
+Column 'IsUpiDtl' does not belong to table .
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 11:46:17:192 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/Mydirects.aspx:  02-Dec-2022 11:55:43:596 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/Mydirects.aspx:  02-Dec-2022 11:58:19:353 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/Mydirects.aspx:  02-Dec-2022 12:02:59:026 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 12:19:00:195 
+Column 'IsUpiDtl' does not belong to table .
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 12:19:21:691 
+Column 'IsUpiDtl' does not belong to table .
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequestDetail.aspx:  02-Dec-2022 12:19:31:364 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequestDetail.aspx:  02-Dec-2022 12:19:50:478 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 12:26:25:547 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  02-Dec-2022 01:14:20:033 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  02-Dec-2022 01:21:42:332 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 01:35:04:630 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 01:36:29:509 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 01:38:17:731 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 01:39:51:012 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 01:41:35:169 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 02:13:55:911 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 02:15:51:910 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 02:19:28:446 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 03:19:47:449 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 03:19:47:475 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 03:19:49:091 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/profile.aspx:  02-Dec-2022 03:22:26:539 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/Index.aspx:  02-Dec-2022 04:35:34:898 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/FundWithdraw.aspx:  02-Dec-2022 04:47:03:980 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 04:57:39:353 
+Column 'IsUpiDtl' does not belong to table .
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 04:57:51:532 
+Column 'IsUpiDtl' does not belong to table .
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 05:01:05:363 
+Column 'IsUpiDtl' does not belong to table .
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 05:02:23:280 
+Column 'IsUpiDtl' does not belong to table .
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 05:02:51:301 
+Column 'Isimage' does not belong to table .
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 05:03:20:205 
+Column 'Istransdate' does not belong to table .
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 05:07:06:778 
+Conversion from type 'DBNull' to type 'Integer' is not valid.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 05:09:18:538 
+Failure sending mail.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequest.aspx:  02-Dec-2022 05:22:29:006 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/IdActivation.aspx:  02-Dec-2022 05:39:04:083 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:7302/MST_Cpanel/DailyInvitationBonus.aspx:  09-Dec-2022 10:35:10:014 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:7302/MST_Cpanel/index.aspx:  09-Dec-2022 10:44:13:233 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:7302/MST_Cpanel/index.aspx:  09-Dec-2022 10:50:31:951 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:7302/MST_Cpanel/index.aspx:  09-Dec-2022 11:11:26:241 
+Column 'Income' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:7302/MST_Cpanel/index.aspx:  09-Dec-2022 11:12:55:898 
+There is no row at position 4.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/Index.aspx:  10-Dec-2022 12:03:14:157 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/IdActivation.aspx:  12-Dec-2022 11:43:47:669 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/DailyDirectBonus.aspx:  12-Dec-2022 12:23:23:265 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/Index.aspx:  12-Dec-2022 12:34:59:683 
+Column 'MagicIncome' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/Index.aspx:  12-Dec-2022 12:35:13:356 
+Column 'MagicIncome' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/Index.aspx:  12-Dec-2022 12:35:36:779 
+Column 'MagicIncome' does not belong to table Table.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/Index.aspx:  12-Dec-2022 12:42:23:053 
+Cannot find table 8.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/Index.aspx:  12-Dec-2022 12:42:32:723 
+Cannot find table 8.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/index.aspx:  12-Dec-2022 12:43:10:856 
+Column 'DirectBonus' does not belong to table Table8.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/Index.aspx:  12-Dec-2022 12:44:43:726 
+Column 'DirectBonus' does not belong to table Table8.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/WalletRequest.aspx:  16-Dec-2022 12:39:12:958 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/WalletRequest.aspx:  16-Dec-2022 06:01:04:551 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/WalletRequest.aspx:  17-Dec-2022 10:38:44:418 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/GroupbusinessM.aspx:  17-Dec-2022 12:51:38:611 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/DailySelfIncome.aspx:  29-Dec-2022 05:59:59:374 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/IdActivation.aspx:  02-Jan-2023 12:16:32:781 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/Index.aspx:  02-Jan-2023 04:53:45:732 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58718/MST_Cpanel/Index.aspx:  03-Jan-2023 10:41:42:453 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/WalletRequestDetail.aspx:  09-Jan-2023 01:17:16:941 
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  11-Jan-2023 11:17:10:079 
+There is no row at position 1.
+--------------------------------------------------------
+http://localhost:51358/MST_Cpanel/index.aspx:  11-Jan-2023 11:36:06:874 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/index.aspx:  16-Jan-2023 12:00:59:469 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/ShoppingWallet.aspx:  16-Jan-2023 12:02:33:619 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/ShoppingWallet.aspx:  16-Jan-2023 12:02:33:626 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:07:02:971 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:07:13:495 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:07:46:518 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:07:56:556 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:13:12:469 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:14:43:006 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/index.aspx:  16-Jan-2023 12:15:22:431 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:16:17:869 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:16:26:815 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:16:57:887 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:19:57:697 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 12:20:46:321 
+Cannot find table 5.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/IdActivation.aspx:  16-Jan-2023 01:28:13:168 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/IdActivation.aspx:  16-Jan-2023 01:28:14:034 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/IdActivation.aspx:  16-Jan-2023 01:33:34:814 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/IdActivation.aspx:  16-Jan-2023 01:33:35:734 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/IdActivation.aspx:  16-Jan-2023 01:34:27:304 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/IdActivation.aspx:  16-Jan-2023 03:06:28:203 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/index.aspx:  16-Jan-2023 03:06:40:026 
+There is no row at position 1.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/index.aspx:  16-Jan-2023 03:07:36:345 
+There is no row at position 1.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Index.aspx:  16-Jan-2023 03:11:38:963 
+There is no row at position 2.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/profile.aspx:  16-Jan-2023 03:32:43:367 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/profile.aspx:  16-Jan-2023 03:38:16:743 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/profile.aspx:  16-Jan-2023 03:38:43:558 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/profile.aspx:  16-Jan-2023 03:41:10:527 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/KycbankDetail_New.aspx:  16-Jan-2023 03:43:43:867 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/KycbankDetail_New.aspx:  16-Jan-2023 03:45:01:624 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/Mydirects.aspx:  16-Jan-2023 03:50:10:444 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/IdActivation.aspx:  16-Jan-2023 04:45:41:114 
+Column 'MacAdrs' does not belong to table .
+--------------------------------------------------------
+http://localhost:50492/Cmayds_Cpanel/GroupbusinessM.aspx:  16-Jan-2023 05:29:10:847 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50901/Cmayds_Cpanel/Index.aspx:  17-Jan-2023 10:27:54:755 
+Thread was being aborted.
+--------------------------------------------------------
+                                                                                                                                                                 http://localhost:50901/Cmayds_Cpanel/Index.aspx:  17-Jan-2023 10:37:45:735 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50901/Cmayds_Cpanel/Mydirects.aspx:  17-Jan-2023 10:38:24:452 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:50901/Cmayds_Cpanel/FundWithdraw.aspx:  17-Jan-2023 12:28:17:192 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:50901/Cmayds_Cpanel/profile.aspx:  17-Jan-2023 12:57:09:608 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/KycbankDetail_New.aspx:  19-Jan-2023 12:19:12:704 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/FundWithdraw.aspx:  19-Jan-2023 01:01:24:708 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/WalletRequest.aspx:  20-Jan-2023 01:25:09:399 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/NewTree.aspx:  20-Jan-2023 01:29:08:767 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/NewTree.aspx:  20-Jan-2023 01:32:07:194 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/NewTree.aspx:  20-Jan-2023 01:32:18:844 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/NewTree.aspx:  20-Jan-2023 01:34:23:078 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/NewTree.aspx:  20-Jan-2023 01:39:55:644 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/NewTree.aspx:  20-Jan-2023 01:58:08:379 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/RefTree.aspx:  20-Jan-2023 03:11:56:493 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/NewTree.aspx:  20-Jan-2023 03:14:14:666 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:55838/Cmayds-_Cpanel/Index.aspx:  20-Jan-2023 03:26:07:142 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/NewTree.aspx:  03-Feb-2023 01:28:00:536 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/NewTree.aspx:  03-Feb-2023 01:31:24:901 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/Mydirects.aspx:  03-Feb-2023 01:42:05:037 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'Leg'.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/index.aspx:  03-Feb-2023 01:45:37:354 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/TeamInvestment.aspx:  03-Feb-2023 03:11:14:620 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/index.aspx:  03-Feb-2023 03:23:12:944 
+Cannot find table 11.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/MyDirectReport.aspx:  04-Feb-2023 02:39:02:439 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/MyDirectReport.aspx:  04-Feb-2023 02:40:12:412 
+Cannot find table 0.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/MyDirectReport.aspx:  04-Feb-2023 02:43:28:890 
+Conversion from string "CM517944" to type 'Integer' is not valid.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/MyDirectReport.aspx:  04-Feb-2023 02:45:13:693 
+Conversion from string "CM517944" to type 'Integer' is not valid.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/MyDirectReport.aspx:  04-Feb-2023 02:46:29:751 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:47807/Cmayds-_Cpanel/FundWithdraw.aspx:  17-Mar-2023 10:16:46:082 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:52838/Cmayds-_Cpanel/FundWithdraw.aspx:  18-Mar-2023 12:25:53:346 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/TeamInvestment.aspx:  23-Mar-2023 06:01:50:667 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/Reward.aspx:  03-May-2023 03:39:32:111 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/Reward.aspx:  03-May-2023 03:45:47:061 
+A field or property with the name 'matchpair' was not found on the selected data source.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/Reward.aspx:  03-May-2023 03:45:47:075 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/Reward.aspx:  03-May-2023 03:48:41:968 
+A field or property with the name 'matchpair' was not found on the selected data source.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/Reward.aspx:  03-May-2023 03:48:41:978 
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/index.aspx:  20-May-2023 12:06:20:091 
+Column 'Reward Income' does not belong to table Table11.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/index.aspx:  20-May-2023 12:06:55:440 
+Column 'Reward Income' does not belong to table Table11.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/index.aspx:  20-May-2023 12:07:09:389 
+Column 'Reward Income' does not belong to table Table11.
+--------------------------------------------------------
+http://localhost:57882/Cmayds-_Cpanel/index.aspx:  20-May-2023 12:08:25:538 
+Column 'Reward Income' does not belong to table Table11.
+--------------------------------------------------------
+http://localhost:58776/index.aspx:  20-Aug-2025 03:52:11:298
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:58776/index.aspx:  20-Aug-2025 04:14:32:650
+Thread was being aborted.
+--------------------------------------------------------
