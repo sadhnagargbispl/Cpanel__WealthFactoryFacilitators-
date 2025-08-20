@@ -20,7 +20,7 @@
         function copyText() {
 
             var range, selection, worked;
-            var element = document.getElementById("ctl00_ContentPlaceHolder1_lblLink");
+            var element = document.getElementById("ContentPlaceHolder1_lblLink");
             if (document.body.createTextRange) {
                 range = document.body.createTextRange();
                 range.moveToElementText(element);
@@ -49,7 +49,7 @@
         function copyText1() {
             debugger;
             var range, selection, worked;
-            var element = document.getElementById("ctl00_ContentPlaceHolder1_lblLink1");
+            var element = document.getElementById("ContentPlaceHolder1_lblLink1");
             if (document.body.createTextRange) {
                 range = document.body.createTextRange();
                 range.moveToElementText(element);

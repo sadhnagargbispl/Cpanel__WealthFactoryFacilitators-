@@ -111,7 +111,8 @@ public partial class Index : System.Web.UI.Page
                 lblPackageName.Text = Ds.Tables[4].Rows[0]["KitName"].ToString();
                 lblStatus.Text = (Ds.Tables[4].Rows[0]["ActiveStatus"].ToString() == "Y") ? "Active" : "Deactive";
                 Image2.ImageUrl = Ds.Tables[4].Rows[0]["ProfilePic"].ToString();
-                lblLink.Text = "http://" + HttpContext.Current.Request.Url.Host + "/Newjoining1.aspx?ref=" + Crypto.Encrypt(Ds.Tables[4].Rows[0]["mid"].ToString() + "/0");
+                lblLink.Text = "https://" + HttpContext.Current.Request.Url.Host + "/Newjoining1.aspx?ref=" + Crypto.Encrypt(Ds.Tables[4].Rows[0]["MID"] + "/1");
+                lblLink1.Text = "https://" + HttpContext.Current.Request.Url.Host + "/Newjoining1.aspx?ref=" + Crypto.Encrypt(Ds.Tables[4].Rows[0]["MID"] + "/2");
                 //aRfLink.HRef = lblLink.Text;
             }
             if (Ds.Tables[5].Rows.Count > 0)
