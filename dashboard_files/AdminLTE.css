@@ -2699,7 +2699,7 @@ table.text-center, table.text-center td, table.text-center th {
 }
 
 .btn-success {
-    background-color: #00a65a;
+    background-color: #3c8dbc;
     border-color: #008d4c;
 }
 
@@ -3514,6 +3514,7 @@ table.text-center th {
 
 .modal {
     background: rgba(0, 0, 0, 0.3);
+    color:white ;
 }
 
 .modal-content {
@@ -3532,6 +3533,7 @@ table.text-center th {
 
 .modal-header {
     border-bottom-color: #f4f4f4;
+    color: black;
 }
 
 .modal-footer {

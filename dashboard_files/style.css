@@ -698,12 +698,12 @@ hr {
         border: 0;
     }
 
-    input {
-        width: 1.5em;
-        background-color: #fff;
-        border-right: 0 none;
-        border-radius: 3px 0 0 3px;
-    }
+input {
+    /*width: 1.5em;*/
+    background-color: #fff;
+    border-right: 0 none;
+    border-radius: 3px 0 0 3px;
+}
 
     button {
         position: relative;
