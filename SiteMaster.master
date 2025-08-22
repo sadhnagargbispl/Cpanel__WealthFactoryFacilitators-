@@ -208,7 +208,8 @@
                                 <span>MY TEAM</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
                                     <li><a href="#"><i class="fa fa-arrow-right"></i>My Directs</a></li>
-                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Tree View</a></li>
+                                    <li><a href="Reftree.aspx">Referral Tree</a></li>
+                                    <li><a href="Newtree.aspx"><i class="fa fa-arrow-right"></i>Tree View</a></li>
                                     <li><a href="#"><i class="fa fa-arrow-right"></i>My Own Team Report</a></li>
                                     <li><a href="#"><i class="fa fa-arrow-right"></i>Team Business</a></li>
                                 </ul>
