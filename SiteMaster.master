@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -181,12 +181,27 @@
 
 
 
-                            <li class="treeview"><a href="#">
+                            <%--             <li class="treeview"><a href="IdActivation.aspx">
                                 <div class="socialicon">
                                     <div class="dribbblecolor socialiconcircle1"></div>
                                     <div class="socialiconcircle2"><i class="fas fa-tachometer-alt fa-spin-hover"></i></div>
                                 </div>
-                                <span>Activation/Upgrade</span> </a></li>
+                                <span>Activation/Upgrade</span> </a></li>--%>
+
+                            <li class="treeview"><a href="#">
+                                <div class="socialicon">
+                                    <div class="dribbblecolor socialiconcircle1"></div>
+                                    <div class="socialiconcircle2"><i class="fas fa-book fa-spin-hover"></i></div>
+                                </div>
+                                <span>Activation/Upgrade</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="IdActivation.aspx"><i class="fa fa-arrow-right"></i>Activation/Upgrade</a></li>
+                                    <li><a href="MyInvestment.aspx"><i class="fa fa-arrow-right"></i>Activation Report</a></li>
+                                </ul>
+                            </li>
+
+
+
 
 
                             <li class="treeview"><a href="#">
@@ -233,8 +248,7 @@
                                 </div>
                                 <span>WALLET</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
-                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Main Wallet Report</a></li>
-                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Topup Wallet Report</a></li>
+                                    <li><a href="AllWalletReport.aspx"><i class="fa fa-arrow-right"></i>All Wallet Report</a></li>
                                     <li><a href="#"><i class="fa fa-arrow-right"></i>Main To Topup Wallet Transfer</a></li>
                                     <li><a href="#"><i class="fa fa-arrow-right"></i>Add Fund</a></li>
                                     <li><a href="#"><i class="fa fa-arrow-right"></i>Add Fund Detail</a></li>
@@ -275,8 +289,8 @@
                                 <span>SIGN OUT</span> </a></li>
                         </ul>
                         <% }
-                        else
-                        { %>
+                            else
+                            { %>
                         <ul class="sidebar-menu" style="font-size: 12px;">
                             <li><a href="NewJoining1.aspx">
                                 <div class="socialicon">
