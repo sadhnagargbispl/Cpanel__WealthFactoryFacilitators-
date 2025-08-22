@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -160,10 +160,10 @@
                                 <span>PROFILE </span><i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
                                     <li><a href="NewJoining1.aspx"><i class="fa fa-circle-o"></i>New Registration</a> </li>
-                                    <li><a href="profile.aspx"><i class="fa fa-arrow-right"></i>Profile</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Profile</a></li>
 
-                                    <li><a href="ChangePass.aspx"><i class="fa fa-arrow-right"></i>Change Password</a></li>
-                                    <li><a href="ChangeTransPass.aspx"><i class="fa fa-arrow-right"></i>Change Trans. Password</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Change Password</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Change Trans. Password</a></li>
                                 </ul>
                             </li>
                             <li class="treeview"><a href="#">
@@ -174,14 +174,14 @@
                                 <span>UPLOAD KYC</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
 
-                                    <li><a href="KycbankDetail_New.aspx"><i class="fa fa-arrow-right"></i>Bank Detail</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Bank Detail</a></li>
                                 </ul>
 
                             </li>
 
 
 
-                            <li class="treeview"><a href="IdActivation.aspx">
+                            <li class="treeview"><a href="#">
                                 <div class="socialicon">
                                     <div class="dribbblecolor socialiconcircle1"></div>
                                     <div class="socialiconcircle2"><i class="fas fa-tachometer-alt fa-spin-hover"></i></div>
@@ -207,10 +207,10 @@
                                 </div>
                                 <span>MY TEAM</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
-                                    <li><a href="MyDirectReport.aspx"><i class="fa fa-arrow-right"></i>My Directs</a></li>
-                                    <li><a href="NewTree.aspx"><i class="fa fa-arrow-right"></i>Tree View</a></li>
-                                    <li><a href="Mydirects.aspx"><i class="fa fa-arrow-right"></i>My Own Team Report</a></li>
-                                    <li><a href="TeamInvestment.aspx"><i class="fa fa-arrow-right"></i>Team Business</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>My Directs</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Tree View</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>My Own Team Report</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Team Business</a></li>
                                 </ul>
                             </li>
                             <li class="treeview"><a href="#">
@@ -220,9 +220,9 @@
                                 </div>
                                 <span>MY INCENTIVE</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
-                                    <li><a href="DailySelfIncome.aspx"><i class="fa fa-arrow-right"></i>Daily Payout</a></li>
-                                    <li><a href="Reward.aspx"><i class="fa fa-arrow-right"></i>Rank </a></li>
-                                    <li><a href="RewardAchieve.aspx"><i class="fa fa-arrow-right"></i>Reward </a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Daily Payout</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Rank </a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Reward </a></li>
                                 </ul>
                             </li>
                             <li class="treeview"><a href="#">
@@ -232,13 +232,13 @@
                                 </div>
                                 <span>WALLET</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
-                                    <li><a href="Accounts.aspx"><i class="fa fa-arrow-right"></i>Main Wallet Report</a></li>
-                                    <li><a href="ShoppingWallet.aspx"><i class="fa fa-arrow-right"></i>Topup Wallet Report</a></li>
-                                    <li><a href="ShoppingWalletTransfer.aspx"><i class="fa fa-arrow-right"></i>Main To Topup Wallet Transfer</a></li>
-                                    <li><a href="WalletRequest.aspx"><i class="fa fa-arrow-right"></i>Add Fund</a></li>
-                                    <li><a href="WalletRequestDetail.aspx"><i class="fa fa-arrow-right"></i>Add Fund Detail</a></li>
-                                    <li id="lifund" runat="server" visible="true"><a href="FundWithdraw.aspx"><i class="fa fa-arrow-right"></i>Withdrawal</a></li>
-                                    <li><a href="Rptwithdrawls.aspx"><i class="fa fa-arrow-right"></i>Withdrawal Detail</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Main Wallet Report</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Topup Wallet Report</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Main To Topup Wallet Transfer</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Add Fund</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Add Fund Detail</a></li>
+                                    <li id="lifund" runat="server" visible="true"><a href="#"><i class="fa fa-arrow-right"></i>Withdrawal</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Withdrawal Detail</a></li>
                                 </ul>
                             </li>
 
@@ -249,7 +249,7 @@
                                 </div>
                                 <span>Our portal</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
-                                    <li><a href="ShoppingRedirect.aspx"><i class="fa fa-arrow-right"></i>Shopping Portal</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Shopping Portal</a></li>
 
                                 </ul>
                             </li>
@@ -262,8 +262,8 @@
                                 </div>
                                 <span>COMPLAINT</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
-                                    <li><a href="Complain.aspx"><i class="fa fa-arrow-right"></i>Raise Ticket</a></li>
-                                    <li><a href="ComplainSolution.aspx"><i class="fa fa-arrow-right"></i>My Ticket Status</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Raise Ticket</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-right"></i>My Ticket Status</a></li>
                                 </ul>
                             </li>
                             <li><a href="logout.aspx">
