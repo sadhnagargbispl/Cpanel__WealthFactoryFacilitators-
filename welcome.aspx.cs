@@ -60,11 +60,11 @@ public partial class welcome : System.Web.UI.Page
                 dt = SqlHelper.ExecuteDataset(constr1 ,CommandType.Text, str).Tables[0];
                 if (dt.Rows.Count > 0)
                 {
-                    LblIdno.Text = dt.Rows[0]["Idno"].ToString();
-                    LblName.Text = dt.Rows[0]["Memname"].ToString();
+                    //LblIdno.Text = dt.Rows[0]["Idno"].ToString();
+                    //LblName.Text = dt.Rows[0]["Memname"].ToString();
                     LblIdno1.Text = dt.Rows[0]["Idno"].ToString();
                     LblName1.Text = dt.Rows[0]["Memname"].ToString();
-                    lblDoj.Text = Convert.ToDateTime(dt.Rows[0]["Doj"]).ToString("dd-MMM-yyyy");
+                    //lblDoj.Text = Convert.ToDateTime(dt.Rows[0]["Doj"]).ToString("dd-MMM-yyyy");
                     lblDoj1.Text = Convert.ToDateTime(dt.Rows[0]["Doj"]).ToString("dd-MMM-yyyy");
                     lblPassw.Text = dt.Rows[0]["Passw"].ToString();
                     lblTransPassw.Text = dt.Rows[0]["EPassw"].ToString();
