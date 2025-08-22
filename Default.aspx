@@ -144,7 +144,13 @@
                                     required="">
                             </div>
                             <div class="d-sm-flex mb-5 align-items-center">
-                                <span class="ml-auto"><a href="Forgot.aspx" onclick="return hs.htmlExpand(this, { objectType: 'iframe',width: 525,height: 280,marginTop : 0 } )" class="forgot-pass">Forgot Password</a></span>
+                                <span class="ml-auto">
+                                    <%--    <a href="Forgot.aspx" 
+                                    onclick="return hs.htmlExpand(this, { objectType: 'iframe',width: 525,height: 280,marginTop : 0 } )"
+                                    class="forgot-pass">Forgot Password</a>--%>
+                                    <a href="#"
+                                        class="forgot-pass">Forgot Password</a>
+                                </span>
                             </div>
                             <asp:Button ID="BtnSubmit" runat="server" Style="border-radius: 50px;" Text="Sign In" class="btn btn-block py-2 btn-primary btncls" OnClick="BtnSubmit_Click" />
                             <%--        <button type="submit" id="BtnSubmit" runat="server" class="btn btn-block py-2 btn-primary btncls">

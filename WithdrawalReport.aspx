@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.master" AutoEventWireup="true" CodeFile="MyInvestment.aspx.cs" Inherits="MyInvestment" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.master" AutoEventWireup="true" CodeFile="WithdrawalReport.aspx.cs" Inherits="WithdrawalReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
@@ -12,7 +12,7 @@
                         <div class="col-md-12">
                             <div class="box box-primary">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">My Investment</h3>
+                                    <h3 class="box-title">Withdrawal Detail</h3>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
@@ -26,15 +26,16 @@
                                                             <div class="row">
                                                                 <div class="col-md-12">
                                                                     <div class="table-responsive">
-                                                                        <div class="table mb-0" cellspacing="0" cellpadding="4" rules="all" border="1" id="ctl00_ContentPlaceHolder2_DGVReferral"
-                                                                            style="width: 100%; border-collapse: collapse;">
-                                                                            <asp:GridView ID="RptDirects" runat="server" AutoGenerateColumns="true" CssClass="table table-bordered"
-                                                                                HeaderStyle-BackColor="#c6c8ca" HeaderStyle-ForeColor="Red" AllowPaging="true"
-                                                                                PageSize="10" OnPageIndexChanging="RptDirects_PageIndexChanging">
-                                                                                <Columns>
-                                                                                </Columns>
-                                                                            </asp:GridView>
-                                                                        </div>
+                                                                        <asp:GridView ID="RptDirects" runat="server" AutoGenerateColumns="true" CssClass="table table-bordered table-responsive-md"
+                                                                            AllowPaging="true" PageSize="20" OnPageIndexChanging="RptDirects_PageIndexChanging">
+                                                                            <Columns>
+                                                                                <asp:TemplateField HeaderText="SNo">
+                                                                                    <ItemTemplate>
+                                                                                        <%#Container.DataItemIndex + 1%>
+                                                                                    </ItemTemplate>
+                                                                                </asp:TemplateField>
+                                                                            </Columns>
+                                                                        </asp:GridView>
                                                                     </div>
                                                                 </div>
                                                             </div>

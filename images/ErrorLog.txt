@@ -1171,3 +1171,18 @@ Object reference not set to an instance of an object.
 http://localhost:53556/IdActivation.aspx:  22-Aug-2025 02:49:39:259 
 Object reference not set to an instance of an object.
 --------------------------------------------------------
+http://localhost:53556/profile.aspx:  22-Aug-2025 04:01:43:598
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53556/GroupbusinessM.aspx (Page_Load):   22-Aug-2025 04:57:54:684 
+Could not find stored procedure 'Sp_MydirectReportDCG'.
+--------------------------------------------------------
+http://localhost:53556/GroupbusinessM.aspx (Page_Load):   22-Aug-2025 04:59:28:011 
+Could not find stored procedure 'Sp_MydirectReportNew22'.
+--------------------------------------------------------
+http://localhost:53556/Mydirects.aspx:  22-Aug-2025 05:08:53:034
+The stored procedure 'sp_GetLevelDetailCpanel_' doesn't exist.
+--------------------------------------------------------
+http://localhost:53556/GroupbusinessDate.aspx (Page_Load):   22-Aug-2025 05:16:55:891
+Could not find stored procedure 'Sp_MydirectReportDate'.
+--------------------------------------------------------
