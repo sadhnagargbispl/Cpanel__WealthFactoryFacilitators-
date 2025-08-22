@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -20,12 +20,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="headscoin/fonts/icomoon/style.css">
-    <link rel="stylesheet" href="headscoin/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/css/owl.carousel.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="headscoin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
     <!-- Style -->
-    <link rel="stylesheet" href="headscoin/css/style.css">
+    <link rel="stylesheet" href="css/css/style.css">
 
 
     <script type="text/javascript" src="highslide/highslide-full.js"></script>
@@ -117,7 +117,7 @@
 </head>
 <body>
     <form id="loginform" runat="server">
-        <div class="d-md-flex half" style="background-image: url(headscoin/images/bg_2.jpg);">
+        <div class="d-md-flex half" style="background-image: url(css/images/bg_2.jpg);">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-12">
@@ -174,12 +174,12 @@
     </form>
 </body>
 
-<script src="headscoin/js/jquery-3.3.1.min.js"></script>
+<script src="css/js/jquery-3.3.1.min.js"></script>
 
-<script src="headscoin/js/popper.min.js"></script>
+<script src="css/js/popper.min.js"></script>
 
-<script src="headscoin/js/bootstrap.min.js"></script>
+<script src="css/js/bootstrap.min.js"></script>
 
-<script src="headscoin/js/main.js"></script>
+<script src="css/js/main.js"></script>
 
 </html>
