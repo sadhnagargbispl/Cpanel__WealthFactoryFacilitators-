@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -163,7 +163,7 @@
                                 </div>
                                 <span>PROFILE </span><i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
-                                    <li><a href="NewJoining1.aspx"><i class="fa fa-circle-o"></i>New Registration</a> </li>
+                                    <li><a href="NewJoining1.aspx"><i class="fa fa-arrow-right"></i>New Registration</a> </li>
                                     <li><a href="profile.aspx"><i class="fa fa-arrow-right"></i>Profile</a></li>
 
                                     <li><a href="ChangePass.aspx"><i class="fa fa-arrow-right"></i>Change Password</a></li>
@@ -205,13 +205,13 @@
                                 </div>
                                 <span>MY TEAM</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
-                                    <li><a href="Referaltree.aspx">Referral Tree</a></li>
+                                    <li><a href="Referaltree.aspx"><i class="fa fa-arrow-right"></i>Referral Tree</a></li>
                                     <li><a href="Newtree.aspx"><i class="fa fa-arrow-right"></i>Tree View</a></li>
-                                    <li><a href="GroupbusinessM.aspx">My Direct</a></li>
-                                    <li><a href="Mydirects.aspx">Level Direct Report</a></li>
-                                    <li><a href="TeamInvestMent.aspx">Team Business</a></li>
-                                    <li><a href="GroupbusinessDate.aspx">Group Business</a></li>
-                                    <li><a href="Downline.aspx">DownLine</a></li>
+                                    <li><a href="GroupbusinessM.aspx"><i class="fa fa-arrow-right"></i>My Direct</a></li>
+                                    <li><a href="Mydirects.aspx"><i class="fa fa-arrow-right"></i>Level Direct Report</a></li>
+                                    <li><a href="TeamInvestMent.aspx"><i class="fa fa-arrow-right"></i>Team Business</a></li>
+                                    <li><a href="GroupbusinessDate.aspx"><i class="fa fa-arrow-right"></i>Group Business</a></li>
+                                    <li><a href="Downline.aspx"><i class="fa fa-arrow-right"></i>DownLine</a></li>
                                 </ul>
                             </li>
                             <li class="treeview"><a href="#">
@@ -261,8 +261,8 @@
                                 </div>
                                 <span>COMPLAINT</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
-                                    <li><a href="Complain.aspx">Raise Ticket</a></li>
-                                    <li><a href="ComplainSolution.aspx">Ticket Status</a></li>
+                                    <li><a href="Complain.aspx"><i class="fa fa-arrow-right"></i>Raise Ticket</a></li>
+                                    <li><a href="ComplainSolution.aspx"><i class="fa fa-arrow-right"></i>Ticket Status</a></li>
                                 </ul>
                             </li>
                             <li><a href="logout.aspx">
