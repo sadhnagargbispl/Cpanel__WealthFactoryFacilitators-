@@ -18,7 +18,8 @@ public partial class SiteMaster : System.Web.UI.MasterPage
     string constr1 = ConfigurationManager.ConnectionStrings["constr1"].ConnectionString;
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        string formattedDateTime = DateTime.Now.ToString("dd MMMM yyyy |  'Time : 'hh.mm tt");
+        Session["CurrntDatetimr"] = formattedDateTime;
         try
         {
             if (Application["WebStatus"] != null)
@@ -52,7 +53,7 @@ public partial class SiteMaster : System.Web.UI.MasterPage
                             Image2.ImageUrl = dt1.Rows[0]["ProfilePic"].ToString();
                         }
                     }
-                    lblComapnyNAme.Text = Session["CompName"].ToString();
+                 
                     string lnt = Crypto.Encrypt("uid=" + Session["IDNo"] + "&pwd=" + Session["MemPassw"] + "&mobile=" + Session["MobileNo"]);
 
                 }

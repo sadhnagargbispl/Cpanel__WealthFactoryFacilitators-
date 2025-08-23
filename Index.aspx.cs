@@ -111,8 +111,12 @@ public partial class Index : System.Web.UI.Page
                 lblPackageName.Text = Ds.Tables[4].Rows[0]["KitName"].ToString();
                 lblStatus.Text = (Ds.Tables[4].Rows[0]["ActiveStatus"].ToString() == "Y") ? "Active" : "Deactive";
                 Image2.ImageUrl = Ds.Tables[4].Rows[0]["ProfilePic"].ToString();
-                lblLink.Text = "https://" + HttpContext.Current.Request.Url.Host + "/Newjoining1.aspx?ref=" + Crypto.Encrypt(Ds.Tables[4].Rows[0]["MID"] + "/1");
-                lblLink1.Text = "https://" + HttpContext.Current.Request.Url.Host + "/Newjoining1.aspx?ref=" + Crypto.Encrypt(Ds.Tables[4].Rows[0]["MID"] + "/2");
+                //string mid = Ds.Tables[4].Rows[0]["MID"].ToString();
+                //string encrypted = HttpUtility.UrlEncode(Crypto.Encrypt(mid + "/1"));
+                lblLink.Value = "https://" + HttpContext.Current.Request.Url.Host + "/Newjoining1.aspx?ref=" + Crypto.Encrypt(Ds.Tables[4].Rows[0]["MID"] + "/1");
+                //string encrypted2 = HttpUtility.UrlEncode(Crypto.Encrypt(mid + "/2"));
+                lblLink1.Value = "https://" + HttpContext.Current.Request.Url.Host + "/Newjoining1.aspx?ref=" + Crypto.Encrypt(Ds.Tables[4].Rows[0]["MID"] + "/2");
+                // lblLink1.Text = "https://" + HttpContext.Current.Request.Url.Host + "/Newjoining1.aspx?ref=" + Crypto.Encrypt(Ds.Tables[4].Rows[0]["MID"] + "/2");
                 //aRfLink.HRef = lblLink.Text;
             }
             if (Ds.Tables[5].Rows.Count > 0)
@@ -122,6 +126,11 @@ public partial class Index : System.Web.UI.Page
             else
             {
                 lblRank.Text = "Not Achieved";
+            }
+            if (Ds.Tables[6].Rows.Count > 0)
+            {
+                RptMemberStatistics.DataSource = Ds.Tables[6];
+                RptMemberStatistics.DataBind();
             }
         }
         catch (Exception ex)

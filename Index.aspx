@@ -76,7 +76,6 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper" style="min-height: 778px;">
 
         <script>
@@ -86,6 +85,7 @@
                 document.body.addEventListener('click', copy, true);
                 // event handler
                 function copy(e) {
+                    debugger;
                     // find target element
                     var
                         t = e.target,
@@ -141,15 +141,14 @@
                 <div class="col-md-5 col-xs-12">
                     <div class="row">
                         <div class="col-md-4 col-xs-12">
-                            <p style="text-align: right; padding: 4px 10px; color: #ffffff; background: #3fb1d9; border-top-left-radius: 60px;">&nbsp;&nbsp;&nbsp;&nbsp;Left Referral Link : </p>
+                            <p style="text-align: right; padding: 4px 10px; color: #ffffff; background: #3fb1d9; border-top-left-radius: 60px;">Left Referral Link : </p>
                         </div>
                         <div class="col-md-8 col-xs-12">
                             <div class="input-group input-group-sm" style="margin-bottom: 8px;">
-                                <asp:Label ID="lblLink" runat="server" Text="" onClick="select()" Style="background-color: rgb(255, 255, 255); font-size: 14px; color: #525252;"></asp:Label>
+                                <input type="text" runat="server" class="form-control" id="lblLink" name="uid" placeholder="Distributor/Customer ID"
+                                    style="background-color: rgb(255, 255, 255); font-size: 14px; color: #525252;" onclick="select()" value="#">
                                 <span class="input-group-btn">
-
-                                    <asp:Button ID="btncopy" class="btn btn-success btn-flat" runat="server" Text="Copy" OnClientClick="return copyText();" Style="width: auto" />
-
+                                    <button class="btn btn-success btn-flat" type="button" data-copytarget="#ContentPlaceHolder1_lblLink">Copy</button>
                                 </span>
                             </div>
                         </div>
@@ -162,11 +161,10 @@
                         </div>
                         <div class="col-md-8 col-xs-12">
                             <div class="input-group input-group-sm" style="margin-bottom: 8px;">
-                                <asp:Label ID="lblLink1" runat="server" Text="" onClick="select()" Style="background-color: rgb(255, 255, 255); font-size: 14px; color: #525252;"></asp:Label>
-                                <%--<input class="form-control" type="text" id="website1" value="https://cpanel.life4ever.co.in/NewJoiningfree.aspx?ref=muC64RboUtAQpE2ujeYMvg==&side=Left" onClick="select()" style="background-color: rgb(255, 255, 255);font-size: 14px;color: #525252;">--%>
+                                <input type="text" runat="server" class="form-control" id="lblLink1" name="uidd" placeholder="Distributor/Customer ID"
+                                    style="background-color: rgb(255, 255, 255); font-size: 14px; color: #525252;" onclick="select()" value="#">
                                 <span class="input-group-btn">
-                                    <asp:Button ID="Button1" class="btn btn-success btn-flat" OnClientClick="return copyText1();"
-                                        runat="server" Text="Copy" Style="width: auto" />
+                                    <button class="btn btn-success btn-flat" type="button" data-copytarget="#ContentPlaceHolder1_lblLink1">Copy</button>
                                 </span>
                             </div>
                         </div>
@@ -174,8 +172,26 @@
                 </div>
             </div>
         </section>
+
         <!-- Main content -->
         <section class="content">
+            <div class="row">
+                <asp:Repeater ID="RptIncome" runat="server">
+                    <ItemTemplate>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <%#Eval("HtmlSnippet")%>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+
+                <asp:Repeater ID="RptBusiness" runat="server">
+                    <ItemTemplate>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <%#Eval("HtmlSnippet")%>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
             <div class="row">
                 <div class="col-md-4 col-xs-12">
                     <div class="box box-widget widget-user-2" style="border: 1px solid #cacaca;">
@@ -226,31 +242,82 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
-
-                <asp:Repeater ID="RptWallet" runat="server">
-                    <ItemTemplate>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <%#Eval("HtmlSnippet")%>
+                <div class="col-md-4 col-xs-12">
+                    <div class="box box-info box-solid">
+                        <div class="box-header with-border">
+                            <i class="ion ion-clipboard"></i>
+                            <h3 class="box-title">WALLET SUMMARY </h3>
+                            <div class="box-tools pull-right">
+                                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            </div>
                         </div>
-                    </ItemTemplate>
-                </asp:Repeater>
-                <asp:Repeater ID="RptIncome" runat="server">
-                    <ItemTemplate>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <%#Eval("HtmlSnippet")%>
+                        <div class="box-body" style="display: block; padding: 10px;">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <tr>
+                                        <th>WalletName </th>
+                                        <th>Credit </th>
+                                        <th>Debit </th>
+                                        <th>Balance </th>
+                                    </tr>
+                                    <asp:Repeater ID="RptWallet" runat="server">
+                                        <ItemTemplate>
+                                            <tr>
+                                                <td><%#Eval("WalletName")%></td>
+                                                <td><%#Eval("Credit")%></td>
+                                                <td><%#Eval("Debit")%></td>
+                                                <td><%#Eval("Balance")%></td>
+                                            </tr>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </table>
+                            </div>
                         </div>
-                    </ItemTemplate>
-                </asp:Repeater>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="box box-info box-solid">
+                        <div class="box-header with-border">
+                            <i class="ion ion-clipboard"></i>
+                            <h3 class="box-title">MY TEAM DETAIL</h3>
+                            <div class="box-tools pull-right">
+                                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body" style="display: block; padding: 10px;">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
 
-                 <asp:Repeater ID="RptBusiness" runat="server">
-     <ItemTemplate>
-         <div class="col-md-4 col-sm-6 col-xs-12">
-             <%#Eval("HtmlSnippet")%>
-         </div>
-     </ItemTemplate>
- </asp:Repeater>
+                                    <tr>
+                                        <th style="text-align: center !important">Metrics</th>
+                                        <th style="text-align: center !important"><span id="ctl00_ContentPlaceHolder1_LLeft">Left</span> </th>
+                                        <th style="text-align: center !important"><span id="ctl00_ContentPlaceHolder1_LRight">Right</span> </th>
+                                        <th style="text-align: center !important">Total </th>
+                                    </tr>
+                                    <asp:Repeater ID="RptMemberStatistics" runat="server">
+                                        <ItemTemplate>
+                                            <tr>
+                                                <td style="text-align: left !important; font-weight: bold;">
+                                                    <%# Eval("Name") %>
+                                                </td>
+                                                <td style="text-align: center !important">
+                                                    <%#Eval("LeftRegistration")%>
+                                                </td>
+                                                <td style="text-align: center !important">
+                                                    <%#Eval("RightRegistration")%>
+                                                </td>
+                                                <td style="text-align: center !important">
+                                                    <%#Eval("TotalRegistration")%>
+                                                </td>
+                                            </tr>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="box box-info box-solid">

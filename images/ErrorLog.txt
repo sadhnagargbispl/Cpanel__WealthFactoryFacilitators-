@@ -1186,3 +1186,36 @@ The stored procedure 'sp_GetLevelDetailCpanel_' doesn't exist.
 http://localhost:53556/GroupbusinessDate.aspx (Page_Load):   22-Aug-2025 05:16:55:891
 Could not find stored procedure 'Sp_MydirectReportDate'.
 --------------------------------------------------------
+http://localhost:53556/index.aspx:  23-Aug-2025 11:49:16:862
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53556/index.aspx:  23-Aug-2025 12:18:16:234
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53556/AddFund.aspx:  23-Aug-2025 12:41:28:142
+Input string was not in a correct format.
+--------------------------------------------------------
+http://localhost:53556/AddFund.aspx:  23-Aug-2025 12:41:28:191
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53556/AddFund.aspx:  23-Aug-2025 12:41:28:209
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53556/AddFund.aspx:  23-Aug-2025 12:42:16:157
+Input string was not in a correct format.
+--------------------------------------------------------
+http://localhost:53556/AddFund.aspx:  23-Aug-2025 12:42:16:188
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53556/AddFund.aspx:  23-Aug-2025 12:42:16:204
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:53556/AddFund.aspx: 23-Aug-2025 01:03:10:877 
+Cannot perform '=' operation on System.Decimal and System.String.
+--------------------------------------------------------
+http://localhost:53556/AddFund.aspx: 23-Aug-2025 01:03:38:622 
+Cannot perform '=' operation on System.Decimal and System.String.
+--------------------------------------------------------
+http://localhost:53556/Index.aspx:  23-Aug-2025 01:29:23:282
+Thread was being aborted.
+--------------------------------------------------------

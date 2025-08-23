@@ -36,8 +36,10 @@
     <link rel="stylesheet" href="./dashboard_files/_all-skins.css">
     <link href="./dashboard_files/select2.css" rel="stylesheet">
     <link href="dashboard_files/style.css" rel="stylesheet">
-
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <script type="text/javascript">
 
 
@@ -232,7 +234,7 @@
                                 <ul class="treeview-menu">
                                     <li><a href="AllWalletReport.aspx"><i class="fa fa-arrow-right"></i>All Wallet Report</a></li>
                                     <li><a href="#"><i class="fa fa-arrow-right"></i>Main To Topup Wallet Transfer</a></li>
-                                    <li><a href="#"><i class="fa fa-arrow-right"></i>Add Fund</a></li>
+                                    <li><a href="AddFund.aspx"><i class="fa fa-arrow-right"></i>Add Fund</a></li>
                                     <li><a href="AddFundReport.aspx"><i class="fa fa-arrow-right"></i>Add Fund Detail</a></li>
                                     <li id="lifund" runat="server" visible="true"><a href="#"><i class="fa fa-arrow-right"></i>Withdrawal</a></li>
                                     <li><a href="WithdrawalReport.aspx"><i class="fa fa-arrow-right"></i>Withdrawal Detail</a></li>
@@ -295,10 +297,8 @@
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
                 <footer class="main-footer">
-
-                    <strong><a href="http://cmayds.com/" style="color: black;" target="_blank">Copyright ©
-                        <asp:Label ID="lblComapnyNAme" runat="server" Text=""></asp:Label>
-                        - All Rights Reserved. </a></strong>
+                    <div class="pull-right hidden-xs" style="color: #29880e"><b style="color: black">Login : </b><%=Session["CurrntDatetimr"]%></div>
+                    <strong><a href='<%=Session["CompWeb"]%>' style="color: black;">Copyright © 2025 <%=Session["CompName"]%> - All Rights Reserved. </a></strong>
                 </footer>
             </div>
         </div>

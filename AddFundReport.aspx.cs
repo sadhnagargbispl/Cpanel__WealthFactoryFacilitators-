@@ -53,7 +53,13 @@ public partial class AddFundReport : System.Web.UI.Page
         {
             DataTable dtData = new DataTable();
             string Condition = "";
-            strquery = IsoStart + "exec Sp_GetWalletDetail '" + Session["formno"] + "' " + IsoEnd;
+            strquery = " select ReqNo,Replace(Convert(Varchar,a.RecTimeStamp,106),' ','-')+ ' '+  " + " CONVERT(varchar(15), CAST(a.RectimeStamp AS TIME),100) as ReqDate,";
+            strquery += "PayMode,Chqno,Replace(Convert(Varchar,ChqDate,106),' ','-') as ChequeDate," + " b.BankName,a.Branchname,";
+            strquery += "Case when IsApprove='N' then 'Pending' when IsApprove='Y' then 'Approve' else 'Rejected'" + " end as status,";
+            strquery += "Amount,a.Remarks,Case when ScannedFile='' then '' when scannedfile like'http%' then ScannedFile " + " else 'images/UploadImage/'+ ScannedFile end as ScannedFile " + " ,";
+            strquery += "Case when ScannedFile='' then 'False' else 'True'";
+            strquery += " end as ScannedFileStatus ";
+            strquery += " from " + Obj.dBName + "..WalletReq " + " as a," + Obj.dBName + "..M_BankMaster as b where a.BankId=b.BankCode and b.RowStatus='Y' and a.Formno='" + Session["Formno"] + "' order by ReqNo desc ";
             dtData = SqlHelper.ExecuteDataset(constr1, CommandType.Text, strquery).Tables[0];
             if (dtData.Rows.Count > 0)
             {
