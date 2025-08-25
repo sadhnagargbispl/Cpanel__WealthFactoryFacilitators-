@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -222,7 +222,7 @@
                                 <span>MY INCENTIVE</span> <i class="fa fa-angle-left pull-right"></i></a>
                                 <ul class="treeview-menu">
                                     <li><a href="#"><i class="fa fa-arrow-right"></i>Daily Payout</a></li>
-
+                                    <li><a href="Reward.aspx"><i class="fa fa-arrow-right"></i>Reward</a></li>
                                 </ul>
                             </li>
                             <li class="treeview"><a href="#">
