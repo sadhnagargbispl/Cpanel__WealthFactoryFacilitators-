@@ -929,111 +929,166 @@ Permanent Address</h5>--%>
                             Terms And Conditions</h4>
                     </div>
                     <div class="modal-body">
-                        <h3>
-                            Promoter Terms and Conditions
-                        </h3>
+                        
                         <p>
-                            By setting up an opportunity with us. You agree that you are the Promoter according
-                            to the definition below. You are considered to accepted and agreed to all these
-                            terms and conditions and obligations of the Promoter. You are responsible and liable
-                            for ensuring that anyone using the Website via your Promoter complies with these
-                            terms and conditions.
+                           These Terms and Conditions ("Terms") govern your use of the website www.wealthfactory.life ("Website") owned and operated by Wealth Factory ("We," "Us," or "Our"), and shall apply to all users, whether individuals or entities, including potential investors, clients, browsers, affiliates, and third-party businesses accessing or interacting with the Website or services offered directly or indirectly through it.
                         </p>
                         <h5>
-                            In these terms and conditions;
+                           1. DEFINITIONS
                         </h5>
                         <p>
-                            I am of legal age in the state of my residency. I agree that I am an independent
-                            promoter responsible for determining my own business activities and not an agent
-                            or employee of the Cmayds Technology. I understand that this position does not
-                            constitute the sale of a franchise or a distributorship and I participate as an
-                            Independent promoter of the COMPANY.</p>
+                           1.1 "User" refers to any natural or legal person who accesses, views, interacts with, or uses the Website, including clients, investors, and third-party business representatives.</p>
                         <p>
-                            I agree that as an Cmayds Technology Independent Promoter, I shall place primary
-                            emphasis upon the promotion and support for the stated goals of the COMPANY and
-                            the solicitation of non-ID individuals, businesses and organizations as customers.</p>
+                           1.2"Third-Party Businesses" refer to independent entities or partners listed, referred, or linked to from the Website that may offer financial, investment, advisory, real estate, or other commercial opportunities.</p>
                         <p>
-                            1. In each presentation given by the promoter the prospect shall be directly informed
-                            that an activation fee of RS 1200 will be charged by the COMPANY to become an active
-                            ID member of the COMPANY and that its explicit purpose is to emulate the foundational
-                            principles of the COMPANY</p>
+                           1.3"Services" refers to information dissemination, lead facilitation, marketing, or redirection services, etc. offered through the Website by Wealth Factory.</p>
+                        <h5>
+    2. ELIGIBILITY AND LEGAL COMPETENCE
+ </h5>
+ <p>
+    2.1 By accessing the Website, or using any portion of the Website or associated Services, the User expressly represents and warrants the following:
+<br />
+a. That the User is at least 18 years of age, or the age of legal majority in their jurisdiction, whichever is higher;
+<br />
+b. That the User is of sound mind, not disqualified or declared incompetent under applicable laws, including the Indian Contract Act, 1872;
+<br />
+c. That the User has full legal capacity and authority to enter into binding contracts in their own name, or on behalf of an entity they represent;
+<br />
+d. That the User is not barred by any court, regulatory body, or statute from accessing financial or commercial services.
+</p>
+ <p>
+     2.2 If the User is under the age of 18, or is otherwise incompetent to contract, the User must not access or use this Website or agree to these Terms.
+ </p>
+ <p>
+    2.3 The User acknowledges that Wealth Factory reserves the right, at its sole discretion, to require proof of age, identity, or competence at any time. Failure to provide satisfactory evidence may result in restricted access, suspension, or termination of the User's account or usage rights without any liability to Wealth Factory.
+ </p>
+                                <h5>
+    3. NATURE OF SERVICES
+ </h5>
+ <p>
+   3.1 Wealth Factory acts solely as an information platform and marketing interface to introduce users to potential business opportunities offered by third parties.
+</p>
+ <p>
+    3.2 Wealth Factory does not offer personalized investment, legal, financial, or tax advisory services unless separately stated and offered through a registered and licensed entity.
+ </p>
+ <p>
+   3.3 Information provided on the Website is intended for general informational purposes only and should not be construed as a solicitation, recommendation, or endorsement of any investment or commercial opportunity.
+ </p>
+ <p>
+   3.4 Wealth Factory assumes no responsibility for monitoring, verifying, or enforcing any transactions or commercial activities conducted by Users outside the Website with third parties.
+ </p>
+  <h5>
+    4. INTELLECTUAL PROPERTY
+ </h5>
+ <p>
+  4.1 The Website and its Content, including but not limited to text, graphics, software, layout, logos, domain names, and proprietary strategies, are the exclusive intellectual property of Wealth Factory and are protected by Indian and international copyright, trademark, and other intellectual property laws.
+</p>
+ <p>
+    4.2 Users may not copy, store, modify, distribute, republish, reproduce, or create derivative works from any material on the Website without prior written permission from Wealth Factory.
+ </p>
+ <p>
+   4.3 The User agrees not to engage in any activity that infringes upon the intellectual property rights of Wealth Factory, including reverse engineering, decompiling, or otherwise tampering with the Website's structure or functionality.
+ </p>
+ <p>
+   4.4 Third-party trademarks or copyrighted materials displayed on the Website remain the property of their respective owners. Nothing on the Website grants the User any right to use such third-party intellectual property.
+ </p>
+                          <h5>
+    5. THIRD-PARTY REDIRECTIONS
+ </h5>
+ <p>
+  5.1 The Website may include links to third-party websites or businesses. By clicking these links, users acknowledge and agree that Wealth Factory acts solely as an introducer, and any subsequent transactions or engagements are between the user and the third party.
+</p>
+ <p>
+    5.2 Wealth Factory does not bear responsibility for the content, legality, or fulfillment of any third-party offerings. All issues, disputes, or claims arising from such engagements are solely between the user and the third-party business.
+ </p>
+                                                  <h5>
+    6. RISK DISCLOSURE
+ </h5>
+ <p>
+  6.1 By accessing or engaging with any product, service, opportunity, or third-party platform facilitated or introduced through Wealth Factory, the user expressly acknowledges and accepts that all such interactions are inherently subject to commercial, financial, legal, and market risks, including but not limited to partial or total loss of capital.
+</p>
+ <p>
+    6.2 Wealth Factory does not offer, promote, or endorse any fixed-return or risk-free investment opportunities. Users must assume that all investment strategies carry the potential for both gains and losses, and that no assurance or warranty of profitability or suitability is offered by Wealth Factory or its affiliates.
+ </p>
+<p>
+   6.3 All decisions relating to investment, tax planning, or legal strategy must be independently made by the user in consultation with qualified professionals. Neither Wealth Factory nor its group companies, affiliates, distributors, partners, nor any of their representatives provide legal, tax, or investment advice, nor do they assist in determining the fair value of any security or investment. Users are solely responsible for appointing their own legal, tax, and financial advisors prior to acting upon any opportunity.
+</p>
+<p>
+  6.4 Users are further advised that past performance of any investment, product, or recommendation, whether discussed in general terms or reflected in any material or Research Report, should not be construed as a guarantee or indicator of future outcomes. No Research Report, article, or commentary made available by Wealth Factory should be relied upon as a recommendation to buy, sell, or hold any security or financial instrument.
+</p>
                         <p>
-                            2. I have carefully read, understood and agree to comply with the COMPANY&rsquo;s Terms
-                            and Conditions and Policies and Procedures. I further agree and understand that
-                            the COMPANY&rsquo;s Policies and Procedures are a binding part of this agreement. I understand
-                            that I must be in good standing and not in violation of any of the terms of this
-                            agreement in order to be eligible to receive any bonuses or commissions for the
-                            COMPANY. The continuation of my COMPANY Independent Promotorship or my acceptance
-                            of bonuses or commissions shall constitute my acceptance of the Terms and Conditions,
-                            the Policies and Procedures and any and all amendments pertaining to both.</p>
+ 6.5 Wealth Factory, its affiliates, and representatives expressly disclaim any liability for losses, damages, or adverse consequences, including, but not limited to, financial loss, regulatory consequences, dissatisfaction, or disputes, arising from any engagement, transaction, or reliance upon information accessed through or in connection with Wealth Factory's platform.
+</p>
                         <p>
-                            3. In order to maintain a viable Marketing Program and to comply with the changes
-                            to national, state and local laws and economic conditions, the COMPANY may provide
-                            additional Terms and Conditions for promoters from time to time, as well as to modify
-                            its promoters Compensation Program and Policies and Procedures. Such additional
-                            Terms and Conditions, Policies and Procedures and Referral Award Plan modifications,
-                            and all changes thereto, shall become a binding part of this Agreement upon publication
-                            on the official COMPANY website or other official COMPANY publications.</p>
+ 6.6 Users understand and agree that they proceed solely at their own discretion, risk, and liability.
+</p>
+                                                                          <h5>
+    7. NO FIDUCIARY OR ADVISORY RELATIONSHIP
+ </h5>
+ <p>
+ Nothing on the Website, nor any interaction with Wealth Factory or its representatives, shall be interpreted to establish a fiduciary, advisory, principal-agent, or partnership relationship. Users acknowledge that all engagements are undertaken independently and at their own discretion, without reliance on any advisory duty, recommendation, or implied obligation from Wealth Factory.
+</p>
+                                                                          <h5>
+    8. LIMITATION OF LIABILITY
+ </h5>
+ <p>
+ 8.1 To the maximum extent permitted by applicable law, Wealth Factory, including its affiliates, officers, representatives, and employees, shall not be liable for any loss, damage, cost, or liability arising out of or in connection with:
+<br />
+a. Any errors, omissions, delays, or inaccuracies in Website content, whether technical, editorial, or user-generated;
+<br />
+b. Access disruptions, system downtime, server failures, bugs, malware, or other technological malfunctions;
+<br />
+c. User decisions or actions taken based on any content, communication, or connection facilitated through the Website;
+<br />
+d. Any business, investment, reputational, or opportunity loss stemming from use, misuse, or inability to use the Website or Services.
+</p>
+<p>
+ 8.2 In no event shall Wealth Factory be liable for any indirect, incidental, special, exemplary, or consequential damages, including loss of profits, revenue, or data, even if foreseeable or previously advised of the possibility.
+</p>
+
+                                                                                                  <h5>
+    9. INDEMNITY
+ </h5>
+ <p>
+ 9.1 The User agrees to fully indemnify, defend, and hold harmless Wealth Factory, including its affiliates, officers, directors, employees, and authorized agents, from and against any and all claims, demands, proceedings, losses, liabilities, damages, penalties, costs, and expenses, arising out of or in connection with:
+<br />
+a. Any breach of these Terms or applicable laws or regulations by the User;
+<br />
+b. Any unauthorized, unlawful, negligent, or improper use of the Website or its content by the User;
+<br />
+c. Any reliance placed by the User on third-party offerings, links, introductions, or representations facilitated through the Website;
+<br />
+d. Any misrepresentation, act, or omission by the User during interactions with third-party websites, businesses, or platforms introduced via the Website.
+</p>
+<p>
+ 9.2 This indemnity obligation shall survive the termination or expiration of these Terms and the User's use of the Website.
+</p>
+<h5>
+    10. TERMINATION AND MODIFICATION
+ </h5>
+ <p>
+ 10.1 Wealth Factory reserves the unconditional right, at its sole discretion, to:
+<br />
+a. Modify, update, suspend, or discontinue any part of the Website or its features, services, or content, in whole or in part, at any time and without prior notice;
+<br />
+b. Amend or revise these Terms periodically. The User's continued access or use of the Website following such updates shall constitute deemed acceptance of the modified Terms;
+<br />
+c. Suspend, restrict, or permanently terminate the User's access to the Website, without notice or liability, in the event of suspected fraud, violation of applicable laws, breach of these Terms, Code of Conduct, or for any conduct deemed harmful to the Website, its Users, or third-party partners.
+</p>
+<p>
+ 10.2 The User acknowledges that Wealth Factory shall not be liable for any loss, damage, or inconvenience caused by such modification, suspension, or termination of access.
+</p>
                         <p>
-                            4. I understand that no Attorney General or other regulatory authority ever registers
-                            or reviews, endorses or approves any product, compensation program or COMPANY, and
-                            I will make no such claim to others</p>
+ 10.3 Upon termination, all rights granted to the User under the Website shall cease immediately, and the User shall promptly discontinue all use of the Website.
+</p>
+                        <h5>
+    11. GOVERNING LAW AND JURISDICTION
+ </h5>
+ <p>
+ These Terms shall be governed by and construed in accordance with the laws of India.
+</p>
                         <p>
-                            5. I am responsible for supervising and supporting the promoters/ID's i refer or
-                            enroll into the program and in my commissionable down-line. I agree to maintain
-                            monthly communication and support to these promoters in my commissionable down-line
-                            by the way of any of the following or combination thereof: Personal contact, telephone
-                            communication, written communication and attendance at promoter's meetings.</p>
-                        <p>
-                            6. I will not make false, misleading or disparaging statements about the COMPANY,
-                            its employees or founders, the business plan, ID positions or the COMPANY mission
-                            and vision. Display of commission checks, the making of income projections and use
-                            of income testimonials to prospective IDs is strictly prohibited. I will conduct
-                            myself as a promoter in a courteous, fair and ethical manner.</p>
-                        <p>
-                            7. Change of original enroller is not permitted. ID and customer lists and names
-                            are owned by the COMPANY and may never be used for any commercial or business purpose
-                            without prior written consent of the COMPANY.</p>
-                        <p>
-                            8. I authorize the COMPANY to use my name, photograph, personal story and/or likeness
-                            in advertising or promotional</p>
-                        <p>
-                            9. I authorize the COMPANY to use my name, photograph, personal story and/or likeness
-                            in advertising or promotional</p>
-                        <p>
-                            10. I give permission to the company to contact me by email or text messaging for
-                            reasons including, but not limited to COMPANY announcements, bonus programs and
-                            promotions, changes in policy, etc.</p>
-                        <p>
-                            11. I understand and agree that I will not approach any another Promotership or
-                            entity to join another network marketing opportunity offered by another company
-                            during the term of my Cmayds Technology Promotership. In addition, I may be subject
-                            to injunctive relief including possible civil penalties and monetary damages for
-                            engaging in such conduct.</p>
-                        <p>
-                            12. I understand that the COMPANY provides me with a website, PPT's for the promotion
-                            of my Business plan. I agree that I will not use the them for any purpose other
-                            than the promotion. I further understand and agree that I will not use the Cmayds
-                            Technology name, logo, pictures or trademarks as part of a website or URL that I
-                            either own or am associated with. I further understand that doing any of the above
-                            may cause financial harm to the COMPANY which may result in me being required to
-                            pay damages to the COMPANY for such actions and may also result in termination of
-                            my status as an Promoter of the COMPANY</p>
-                        <p>
-                            I understand that failure to comply with the above COMPANY Terms and Conditions
-                            and Policies and Procedures may result in the termination of Agreement and/or the
-                            COMPANY&rsquo;s Terms and Conditions and Policies and Procedures, the COMPANY may suspend
-                            my ID status and any payments due to me may be escrowed until final resolution has
-                            been achieved. I acknowledge that in the event of my violation of this Agreement
-                            and/or the COMPANY&rsquo;s Terms and Conditions and/or Policies and Procedures, my ID
-                            rights may be terminated without further commission or payments of any kind. I agree
-                            to indemnify and hold the COMPANY, its directors, officers or employees harmless
-                            from any and all claims, damages or expenses (including attorney fees) that may
-                            arise out of my actions or conduct in violation of this Agreement.
-                        </p>
-                        <p>
-                            I acknowledge the COMPANY&rsquo;S Business plan is based on currentscenario/plan&rsquo;s and
-                            is subject to change without notice.</p>
+                            Any dispute arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the Courts at Gurugram, Haryana, India.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">
