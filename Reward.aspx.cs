@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -90,7 +90,7 @@ public partial class Reward : System.Web.UI.Page
                 string sql1 = "select Rank,Reward,Amount,Cast(RDays as int) as RDays,Cast(CummRdays as Int) as Cummrdays, " +
                               "0 as RemainingDays, Case when DateDiff(Day,c.UpgradeDate,Getdate())>Cast(CummRDays as int) then " +
                               "0 else Cast(CummRDays as int)-DateDiff(Day,c.UpgradeDate,Getdate()) end as RemainDays, " +
-                              "Notimelimit,newpair,c.ActiveStatus from M_rewardmaster as a " +
+                              "Notimelimit,Pair as newpair,c.ActiveStatus from M_rewardmaster as a " +
                               "Left Join M_membermaster as c On c.Formno='" + Session["FormNo"] + "' where " +
                               "RewardId Not In(Select Distinct(Rewardid)+1 " +
                               "from M_RewardFinal where Formno='" + Session["FormNo"] + "' Group by Formno,Rewardid ) and RewardId>1";

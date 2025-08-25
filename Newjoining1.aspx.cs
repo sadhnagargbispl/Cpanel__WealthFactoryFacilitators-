@@ -817,7 +817,7 @@ public partial class Newjoining1 : System.Web.UI.Page
             StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
                      "<tr>" +
                      "<td>" +
-                     "<span style=\"color: #0099CC; font-weight: bold;\"><h2>Dear " + MemberName + ",</h2></span><br />" +
+                     "Dear " + MemberName + ",<br />" +
                      "You recently requested to retrieve your login details for your Wealth Factory account. <br />" +
                      "As requested, here are your secure account credentials:<br />" +
                       "<strong>User ID: " + IdNo + "</strong><br />" +
@@ -826,7 +826,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                      "Please ensure you store this information securely and do not share it with anyone under any circumstances. <br />" +
                      "If you did not request this information, please contact our support team immediately so we can secure your account. <br />" +
                      "Thank you for choosing Wealth Factory; Where opportunities meet growth.<br />" +
-                     "Warm regards,\nTeam Wealth Factory"+
+                     "Warm regards,<br />Team Wealth Factory" +
                      "<br />" +
                      "<br />" +
                      "</td>" +
@@ -1857,9 +1857,9 @@ public partial class Newjoining1 : System.Web.UI.Page
             StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
                      "<tr>" +
                      "<td>" +
-                     "Dear "+txtFrstNm.Text +"," +
-                     "We appreciate your interest in joining Wealth Factory "+
-                     "To proceed with the registration of your account, kindly verify your email address by entering the One-Time Password (OTP) provided below:"+
+                     "Dear "+txtFrstNm.Text + ",<br />" +
+                     "We appreciate your interest in joining Wealth Factory <br />" +
+                     "To proceed with the registration of your account, kindly verify your email address by entering the One-Time Password (OTP) provided below:<br />" +
                      "One-Time Password (OTP): <span style=\"font-weight: bold;\">" + otp + "</span> (valid for 5 minutes)." +
                      "<br />" +
                      "This code is valid for a limited time and is strictly confidential. For your security, please refrain from sharing it with anyone."+
@@ -1868,7 +1868,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                        "<br />" +
                      "If you have any questions or require assistance, please do not hesitate to contact our support team at support@wealthfactory.com" +
                             "<br />" +
-                     "Regards, \nClient Relations Team\nWealth Factory" +
+                     "Regards, <br />Client Relations Team<br />Wealth Factory" +
                      "</td>" +
                      "</tr>" +
                     "</table>";
