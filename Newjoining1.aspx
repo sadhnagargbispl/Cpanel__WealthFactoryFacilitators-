@@ -817,10 +817,10 @@ Permanent Address</h5>--%>
                                 </center>
                         </div>
                         <div id="DivTerms" runat="server" visible="true" >
-                            <%--<asp:Button ID="CmdSave" runat="server" Text="Send Otp" CssClass="btn btn-block py-2 btn-info"
-                                TabIndex="54"  OnClick="CmdSave_Click"/>--%>
-                            <asp:Button ID="CmdSave" runat="server" Text="Submit" CssClass="btn btn-success btn-flat"
+                            <asp:Button ID="CmdSave" runat="server" Text="Send Otp" CssClass="btn btn-success btn-flat"
                                 TabIndex="54"  OnClick="CmdSave_Click"/>
+                           <%-- <asp:Button ID="CmdSave" runat="server" Text="Submit" CssClass="btn btn-success btn-flat"
+                                TabIndex="54"  OnClick="CmdSave_Click"/>--%>
                             &nbsp;<asp:Button ID="CmdCancel" runat="server" Text="Cancel" CssClass="btn btn-block py-2 btn-success"
                                 ValidationGroup="eCancel" TabIndex="55" Visible="false" Onclikc="CmdCancel_Click"/>
                         </div>
@@ -838,11 +838,12 @@ Permanent Address</h5>--%>
                                         SetFocusOnError="true" Text="*" ValidationGroup="Submitbtn"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-md-12">
+                            <div class="col-lg-12 col-md-4">
                                 <asp:Button ID="BtnPassword" runat="server" ValidationGroup="Submitbtn" Text="Submit"
-                                    class="btn btn-warning btn-sm p-2" Width="150px" OnClick="BtnPassword_Click"/>
-                                <asp:Button ID="btngenerate" runat="server" Text="Re-Generate OTP" class="btn btn-warning btn-sm p-2"
+                                    class="btn btn-success btn-flat" Width="150px" OnClick="BtnPassword_Click"/>
+                                &nbsp;<asp:Button ID="btngenerate" runat="server" Text="Re-Generate OTP" class="btn btn-success btn-flat"
                                     Width="150px"  OnClick ="btngenerate_Click" />
+                                <br />
                             </div>
                         </div>
                       </label>

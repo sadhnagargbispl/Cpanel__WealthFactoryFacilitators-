@@ -14,6 +14,7 @@ using System.Activities.Expressions;
 using System.Activities;
 using System.ServiceModel.Activities;
 
+
 public partial class Newjoining1 : System.Web.UI.Page
 {
     private double _dblAvailLeg = 0;
@@ -767,6 +768,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                             }
                             CmdSave.Enabled = true;
                             Session["LASTID"] = LastInsertID;
+                            SendToMemberMail(LastInsertID, Email, membername, Password);
                             Session["Join"] = "YES";
                             scrname = "<SCRIPT language='javascript'>alert('Registration Successfully.Your IdNo is " + LastInsertID + "');" + "</SCRIPT>";
                             ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "alert", "alert('Try Again Later.');", true);
@@ -808,6 +810,38 @@ public partial class Newjoining1 : System.Web.UI.Page
     {
         try
         {
+            string StrMsg = "";
+            System.Net.Mail.MailAddress SendFrom = new System.Net.Mail.MailAddress(Session["CompMail"].ToString());
+            System.Net.Mail.MailAddress SendTo = new System.Net.Mail.MailAddress(Email);
+            System.Net.Mail.MailMessage MyMessage = new System.Net.Mail.MailMessage(SendFrom, SendTo);
+            StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
+                     "<tr>" +
+                     "<td>" +
+                     "<span style=\"color: #0099CC; font-weight: bold;\"><h2>Dear " + MemberName + ",</h2></span><br />" +
+                     "You recently requested to retrieve your login details for your Wealth Factory account. <br />" +
+                     "As requested, here are your secure account credentials:<br />" +
+                      "<strong>User ID: " + IdNo + "</strong><br />" +
+                     "<strong>Password: " + Password + "</strong><br />" +
+                     "<strong>Transaction Password: " + Password + "</strong><br />" +
+                     "Please ensure you store this information securely and do not share it with anyone under any circumstances. <br />" +
+                     "If you did not request this information, please contact our support team immediately so we can secure your account. <br />" +
+                     "Thank you for choosing Wealth Factory; Where opportunities meet growth.<br />" +
+                     "Warm regards,\nTeam Wealth Factory"+
+                     "<br />" +
+                     "<br />" +
+                     "</td>" +
+                     "</tr>" +
+                     "</table>";
+
+            MyMessage.Subject = "Your Wealth Factory Login Credentials";
+            MyMessage.Body = StrMsg;
+            MyMessage.IsBodyHtml = true;
+            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com");
+            smtp.Port = 587;
+            smtp.EnableSsl = true;
+            smtp.UseDefaultCredentials = false;
+            smtp.Credentials = new System.Net.NetworkCredential(Session["CompMail"].ToString(), Session["MailPass"].ToString());
+            smtp.Send(MyMessage);
             return true;
         }
         catch (Exception ex)
@@ -1023,137 +1057,137 @@ public partial class Newjoining1 : System.Web.UI.Page
     }
     protected void CmdSave_Click(object sender, EventArgs e)
     {
-        try
-        {
-            if (!chkterms.Checked)
-            {
-                string scrname = "<SCRIPT language='javascript'>alert('Please select Terms and Condtions');</SCRIPT>";
-                ScriptManager.RegisterStartupScript(Page, GetType(), "Login Error", scrname, false);
-                return;
-            }
-            else
-            {
-                SaveIntoDB();
-            }
-        }
-        catch (Exception ex)
-        {
-            throw new Exception(ex.Message);
-        }
         //try
         //{
-
-
         //    if (!chkterms.Checked)
         //    {
-        //        string scrname = "<SCRIPT language='javascript'>alert('Please select Terms and Conditions');</SCRIPT>";
-        //        ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrname, false);
+        //        string scrname = "<SCRIPT language='javascript'>alert('Please select Terms and Condtions');</SCRIPT>";
+        //        ScriptManager.RegisterStartupScript(Page, GetType(), "Login Error", scrname, false);
         //        return;
-        //    }
-        //    if (string.IsNullOrEmpty(txtEMailId.Text))
-        //    {
-        //        chkterms.Checked = false;
-        //        CmdSave.Enabled = true;
-        //        string scrname = "<SCRIPT language='javascript'>alert('Enter Email-Id.');</SCRIPT>";
-        //        ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "alert", "alert('Enter Email-Id.');", true);
-        //        return;
-        //    }
-        //    if (string.IsNullOrEmpty(txtMobileNo.Text))
-        //    {
-        //        chkterms.Checked = false;
-        //        CmdSave.Enabled = true;
-        //        string scrname = "<SCRIPT language='javascript'>alert('Enter Mobile No.');</SCRIPT>";
-        //        ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "alert", "alert('Enter Mobile No.');", true);
-        //        return;
-        //    }
-        //    //if (string.IsNullOrEmpty(TxtAAdhar1.Text))
-        //    //{
-        //    //    chkterms.Checked = false;
-        //    //    CmdSave.Enabled = true;
-        //    //    string scrname = "<SCRIPT language='javascript'>alert('Enter Aadhar No.');</SCRIPT>";
-        //    //    ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "alert", "alert('Enter Aadhar No.');", true);
-        //    //    return;
-        //    //}
-
-        //    if (Session["OTPP_"] == null)
-        //    {
-        //        Random random = new Random();
-        //        int OTP_ = random.Next(100001, 999999);
-        //        int OTPP_ = random.Next(200001, 999999);
-
-        //        string emailId = txtEMailId.Text;
-        //        string memberName = txtFrstNm.Text;
-        //        string mobileNo = txtMobileNo.Text;
-
-        //        Session["OtpTime"] = DateTime.Now.AddMinutes(5);
-        //        Session["Retry"] = "1";
-        //        Session["OTPP_"] = OTPP_;
-        //        Session["TPP_"] = OTPP_;
-
-        //        ObjDAL = new DAL();
-        //        if (Convert.ToInt32(Session["OTPP_"]) != 0)
-        //        {
-        //            Session["Retry"] = "1";
-        //            divOtp.Visible = true;
-        //        }
-        //        else
-        //        {
-        //            divOtp.Visible = false;
-        //            return;
-        //        }
-
-        //        string query = "INSERT INTO AdminLogin(UserID, Username, Passw, MobileNo, Otp, Emailotp, emailid) " +
-        //                       "VALUES ('0', @Username, @Passw, @MobileNo, @Otp, @EmailOtp, @EmailId)";
-
-        //        using (SqlCommand cmd = new SqlCommand(query, new SqlConnection(constr)))
-        //        {
-        //            cmd.Parameters.AddWithValue("@Username", txtFrstNm.Text);
-        //            cmd.Parameters.AddWithValue("@Passw", TxtPassword.Text);
-        //            cmd.Parameters.AddWithValue("@MobileNo", txtMobileNo.Text);
-        //            cmd.Parameters.AddWithValue("@Otp", OTP_);
-        //            cmd.Parameters.AddWithValue("@EmailOtp", OTPP_);
-        //            cmd.Parameters.AddWithValue("@EmailId", txtEMailId.Text);
-
-        //            cmd.Connection.Open();
-        //            int rowsAffected = cmd.ExecuteNonQuery();
-        //            cmd.Connection.Close();
-
-        //            if (rowsAffected > 0)
-        //            {
-        //                string script = "<script language='javascript'>alert('OTP has been sent to your Email. Please Enter OTP');</script>";
-        //                ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", script, false);
-        //                SendToMemberMailotp(OTPP_);
-        //                //TxtPassword.Text = Session["OTPP_"].ToString();
-        //                CmdSave.Enabled = false;
-        //                txtRefralId.ReadOnly = true;
-        //                TxtPassword.ReadOnly = false;
-        //                RbtnLegNo.Enabled = false;
-        //                txtFrstNm.ReadOnly = true;
-        //                //ddlCountryNAme.Enabled = false;
-        //                txtMobileNo.ReadOnly = true;
-        //                txtEMailId.ReadOnly = true;
-        //                //txtaadharno.ReadOnly = true;
-        //                chkterms.Enabled = false;
-        //                divOtp.Visible = true;
-        //                DivTerms.Visible = false;
-        //            }
-        //            else
-        //            {
-        //                string script = "<SCRIPT language='javascript'>alert('Try Again.');</SCRIPT>";
-        //                ClientScript.RegisterStartupScript(this.GetType(), "MyAlert", script);
-        //                return;
-        //            }
-        //        }
         //    }
         //    else
         //    {
-        //        Response.Redirect("Newjoining1.aspx");
+        //        SaveIntoDB();
         //    }
         //}
         //catch (Exception ex)
         //{
-        //    Response.Write("Try later.");
+        //    throw new Exception(ex.Message);
         //}
+        try
+        {
+
+
+            if (!chkterms.Checked)
+            {
+                string scrname = "<SCRIPT language='javascript'>alert('Please select Terms and Conditions');</SCRIPT>";
+                ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", scrname, false);
+                return;
+            }
+            if (string.IsNullOrEmpty(txtEMailId.Text))
+            {
+                chkterms.Checked = false;
+                CmdSave.Enabled = true;
+                string scrname = "<SCRIPT language='javascript'>alert('Enter Email-Id.');</SCRIPT>";
+                ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "alert", "alert('Enter Email-Id.');", true);
+                return;
+            }
+            if (string.IsNullOrEmpty(txtMobileNo.Text))
+            {
+                chkterms.Checked = false;
+                CmdSave.Enabled = true;
+                string scrname = "<SCRIPT language='javascript'>alert('Enter Mobile No.');</SCRIPT>";
+                ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "alert", "alert('Enter Mobile No.');", true);
+                return;
+            }
+            //if (string.IsNullOrEmpty(TxtAAdhar1.Text))
+            //{
+            //    chkterms.Checked = false;
+            //    CmdSave.Enabled = true;
+            //    string scrname = "<SCRIPT language='javascript'>alert('Enter Aadhar No.');</SCRIPT>";
+            //    ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "alert", "alert('Enter Aadhar No.');", true);
+            //    return;
+            //}
+
+            if (Session["OTPP_"] == null)
+            {
+                Random random = new Random();
+                int OTP_ = random.Next(100001, 999999);
+                int OTPP_ = random.Next(200001, 999999);
+
+                string emailId = txtEMailId.Text;
+                string memberName = txtFrstNm.Text;
+                string mobileNo = txtMobileNo.Text;
+
+                Session["OtpTime"] = DateTime.Now.AddMinutes(5);
+                Session["Retry"] = "1";
+                Session["OTPP_"] = OTPP_;
+                Session["TPP_"] = OTPP_;
+
+                ObjDAL = new DAL();
+                if (Convert.ToInt32(Session["OTPP_"]) != 0)
+                {
+                    Session["Retry"] = "1";
+                    divOtp.Visible = true;
+                }
+                else
+                {
+                    divOtp.Visible = false;
+                    return;
+                }
+
+                string query = "INSERT INTO AdminLogin(UserID, Username, Passw, MobileNo, Otp, Emailotp, emailid) " +
+                               "VALUES ('0', @Username, @Passw, @MobileNo, @Otp, @EmailOtp, @EmailId)";
+
+                using (SqlCommand cmd = new SqlCommand(query, new SqlConnection(constr)))
+                {
+                    cmd.Parameters.AddWithValue("@Username", txtFrstNm.Text);
+                    cmd.Parameters.AddWithValue("@Passw", TxtPassword.Text);
+                    cmd.Parameters.AddWithValue("@MobileNo", txtMobileNo.Text);
+                    cmd.Parameters.AddWithValue("@Otp", OTP_);
+                    cmd.Parameters.AddWithValue("@EmailOtp", OTPP_);
+                    cmd.Parameters.AddWithValue("@EmailId", txtEMailId.Text);
+
+                    cmd.Connection.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    cmd.Connection.Close();
+
+                    if (rowsAffected > 0)
+                    {
+                        string script = "<script language='javascript'>alert('OTP has been sent to your Email. Please Enter OTP');</script>";
+                        ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Login Error", script, false);
+                        SendToMemberMailotp(OTPP_);
+                        //TxtPassword.Text = Session["OTPP_"].ToString();
+                        CmdSave.Enabled = false;
+                        txtRefralId.ReadOnly = true;
+                        TxtPassword.ReadOnly = false;
+                        RbtnLegNo.Enabled = false;
+                        txtFrstNm.ReadOnly = true;
+                        //ddlCountryNAme.Enabled = false;
+                        txtMobileNo.ReadOnly = true;
+                        txtEMailId.ReadOnly = true;
+                        //txtaadharno.ReadOnly = true;
+                        chkterms.Enabled = false;
+                        divOtp.Visible = true;
+                        DivTerms.Visible = false;
+                    }
+                    else
+                    {
+                        string script = "<SCRIPT language='javascript'>alert('Try Again.');</SCRIPT>";
+                        ClientScript.RegisterStartupScript(this.GetType(), "MyAlert", script);
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                Response.Redirect("Newjoining1.aspx");
+            }
+        }
+        catch (Exception ex)
+        {
+            Response.Write("Try later.");
+        }
     }
     private void FindSession()
     {
@@ -1816,20 +1850,30 @@ public partial class Newjoining1 : System.Web.UI.Page
             SmtpClient smtpClient = new SmtpClient();
             MailMessage mail = new MailMessage();
             string StrMsg = "";
-            MailAddress SendFrom = new MailAddress("cmayds.1995@gmail.com");
+            MailAddress SendFrom = new System.Net.Mail.MailAddress(Session["CompMail"].ToString());
             MailAddress SendTo = new MailAddress(txtEMailId.Text);
             MailMessage MyMessage = new MailMessage(SendFrom, SendTo);
-            mail.Subject = "Thanks For Connecting!!!";
+            mail.Subject = "Wealth Factory Account Registration!";
             StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
                      "<tr>" +
                      "<td>" +
-                     "Your OTP for Registration is <span style=\"font-weight: bold;\">" + otp + "</span> (valid for 5 minutes)." +
+                     "Dear "+txtFrstNm.Text +"," +
+                     "We appreciate your interest in joining Wealth Factory "+
+                     "To proceed with the registration of your account, kindly verify your email address by entering the One-Time Password (OTP) provided below:"+
+                     "One-Time Password (OTP): <span style=\"font-weight: bold;\">" + otp + "</span> (valid for 5 minutes)." +
                      "<br />" +
+                     "This code is valid for a limited time and is strictly confidential. For your security, please refrain from sharing it with anyone."+
+                       "<br />" +
+                     "If you did not initiate this request, no action is required. Your information remains secure and unchanged." +
+                       "<br />" +
+                     "If you have any questions or require assistance, please do not hesitate to contact our support team at support@wealthfactory.com" +
+                            "<br />" +
+                     "Regards, \nClient Relations Team\nWealth Factory" +
                      "</td>" +
                      "</tr>" +
                     "</table>";
 
-            MyMessage.Subject = "Thanks For Connecting!!!";
+            MyMessage.Subject = "Wealth Factory Account Registration!";
             MyMessage.Body = StrMsg;
             MyMessage.IsBodyHtml = true;
 
