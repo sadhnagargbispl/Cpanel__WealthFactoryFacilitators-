@@ -361,11 +361,11 @@ public partial class IdActivation : System.Web.UI.Page
                         if (objDal.SaveData(query) != 0)
                         {
                             string sms = "";
-                            string scrName = "<SCRIPT language='javascript'>alert('Your Investment of " + txtAmount.Text + " successfully done ');</SCRIPT>";
-                            ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Upgraded", scrName, false);
                             LblError.Text = "Amount Transfer Successfully!!";
                             Clear();
                             GetBalance();
+                            ScriptManager.RegisterStartupScript(Page, GetType(), "Key", "alert('Id Activation Successfully done');location.replace('IdActivation.aspx');", true);
+                            return;
                         }
                     }
                     else
@@ -379,8 +379,7 @@ public partial class IdActivation : System.Web.UI.Page
             }
             else
             {
-                string scrName = "<SCRIPT language='javascript'>alert('Try later!! ');</SCRIPT>";
-                ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Upgraded", scrName, false);
+                ScriptManager.RegisterStartupScript(Page, GetType(), "Key", "alert('Try later.!');location.replace('IdActivation.aspx');", true);
                 return;
             }
         }

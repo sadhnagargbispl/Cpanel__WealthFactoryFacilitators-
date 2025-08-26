@@ -207,10 +207,10 @@
                                 <ul class="treeview-menu">
                                     <li><a href="Referaltree.aspx"><i class="fa fa-arrow-right"></i>Referral Tree</a></li>
                                     <li><a href="Newtree.aspx"><i class="fa fa-arrow-right"></i>Tree View</a></li>
-                                    <li><a href="GroupbusinessM.aspx"><i class="fa fa-arrow-right"></i>My Direct</a></li>
-                                    <li><a href="Mydirects.aspx"><i class="fa fa-arrow-right"></i>Level Direct Report</a></li>
+                                   <%-- <li><a href="GroupbusinessM.aspx"><i class="fa fa-arrow-right"></i>My Direct</a></li>--%>
+                                   <%-- <li><a href="Mydirects.aspx"><i class="fa fa-arrow-right"></i>Level Direct Report</a></li>--%>
                                     <li><a href="TeamInvestMent.aspx"><i class="fa fa-arrow-right"></i>Team Business</a></li>
-                                    <li><a href="GroupbusinessDate.aspx"><i class="fa fa-arrow-right"></i>Group Business</a></li>
+                                    <%--<li><a href="GroupbusinessDate.aspx"><i class="fa fa-arrow-right"></i>Group Business</a></li>--%>
                                     <li><a href="Downline.aspx"><i class="fa fa-arrow-right"></i>DownLine</a></li>
                                 </ul>
                             </li>

@@ -405,10 +405,10 @@ dTree.prototype.node = function(node, nodeId) {
 		strTable += '<td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>' + node.Idno+ '</td>';  
 		strTable+='</tr>';
 		
-		strTable+='<tr>';
-		strTable += '<td ' + tooltiptdlbl + '><font ' + tooltipfontlbl + '>Member Name:</font></td>';
-		strTable += '<td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>' + node.nodename+ '</td>';  
-		strTable+='</tr>';
+		//strTable+='<tr>';
+		//strTable += '<td ' + tooltiptdlbl + '><font ' + tooltipfontlbl + '>Member Name:</font></td>';
+		//strTable += '<td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>' + node.nodename+ '</td>';  
+		//strTable+='</tr>';
 		strTable+='<tr>';
 		strTable += '<td ' + tooltiptdlbl + '><font ' + tooltipfontlbl + '>Sponsor:</font></td>';
 		strTable += '<td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>' + node.sponsor+ '</td>';  
@@ -466,12 +466,12 @@ dTree.prototype.node = function(node, nodeId) {
 
 //		strTable += '</tr>';
 		
-//		strTable += '<tr>';
-//		strTable += '<td ' + tooltiptdlbl + '><font ' + tooltipfontlbl + '>Carry Forward PV :</font></td>';
-//		strTable += '<td ' + tooltiptdtxt + '><table width=100% border=1 cellpadding=1 cellspacing=0 bgcolor=#ffffff ><tr><td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>Left</font></td><td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>' + node.LeftCarryBv + '</font></td><td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>Right</font></td><td ' + tooltiptdtxt + '> <font ' + tooltipfonttxt + '>' + node.RightCarryBv + '</font></td></tr></table></font></td>';
+		strTable += '<tr>';
+		strTable += '<td ' + tooltiptdlbl + '><font ' + tooltipfontlbl + '>Carry Forward BV :</font></td>';
+		strTable += '<td ' + tooltiptdtxt + '><table width=100% border=1 cellpadding=1 cellspacing=0 bgcolor=#ffffff ><tr><td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>Left</font></td><td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>' + node.LeftCarryBv + '</font></td><td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>Right</font></td><td ' + tooltiptdtxt + '> <font ' + tooltipfonttxt + '>' + node.RightCarryBv + '</font></td></tr></table></font></td>';
 
-//		//strTable += '<td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>LEFT :' + node.ActiveDirect + ', RIGHT :' + node.ActiveIndirect + '</font> </td>';
-//		strTable += '</tr>';
+		//strTable += '<td ' + tooltiptdtxt + '><font ' + tooltipfonttxt + '>LEFT :' + node.ActiveDirect + ', RIGHT :' + node.ActiveIndirect + '</font> </td>';
+		strTable += '</tr>';
 		}
 		else	
 		{

@@ -38,7 +38,7 @@ public partial class SiteMaster : System.Web.UI.MasterPage
                 {
                     LblName.Text = Session["MemName"].ToString();
                     Lbldate.Text = (Session["ActiveStatus"].ToString() == "Y") ? Session["DOA"].ToString() : "";
-                    string sql = objDal.Isostart + "select profilepic,* from Cmayds..M_MemberMaster where formno=" + Session["FormNo"] + objDal.IsoEnd;
+                    string sql = objDal.Isostart + "select profilepic,* from " + objDal.dBName + "..M_MemberMaster where formno=" + Session["FormNo"] + objDal.IsoEnd;
                     DataTable dt1 = new DataTable();
                     dt1 = SqlHelper.ExecuteDataset(constr1, CommandType.Text, sql).Tables[0];
 
@@ -53,7 +53,7 @@ public partial class SiteMaster : System.Web.UI.MasterPage
                             Image2.ImageUrl = dt1.Rows[0]["ProfilePic"].ToString();
                         }
                     }
-                 
+
                     string lnt = Crypto.Encrypt("uid=" + Session["IDNo"] + "&pwd=" + Session["MemPassw"] + "&mobile=" + Session["MobileNo"]);
 
                 }
