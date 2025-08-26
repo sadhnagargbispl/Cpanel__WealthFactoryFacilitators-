@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.master" AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="Index" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.master" AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="Index" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
@@ -234,7 +234,7 @@
 
                                 <li><a href="#"><strong>
                                     <i class="fa fa-map-marker margin-r-5"></i>
-                                    Rank</strong>
+                                    Reward</strong>
                                     <span class="pull-right badge bg-blue">
                                         <asp:Label ID="lblRank" runat="server" Text=""></asp:Label>
                                     </span></a></li>

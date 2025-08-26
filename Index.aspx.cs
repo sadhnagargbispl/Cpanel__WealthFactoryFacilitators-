@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -121,7 +121,7 @@ public partial class Index : System.Web.UI.Page
             }
             if (Ds.Tables[5].Rows.Count > 0)
             {
-                lblRank.Text = Ds.Tables[5].Rows[0]["Rank"].ToString();
+                lblRank.Text = Ds.Tables[5].Rows[0]["Reward"].ToString();
             }
             else
             {
