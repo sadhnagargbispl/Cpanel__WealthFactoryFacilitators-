@@ -121,12 +121,12 @@ public partial class TeamInvestMent : System.Web.UI.Page
 
             if (!string.IsNullOrEmpty(FrmDate) && !string.IsNullOrEmpty(ToDate))
             {
-                condition += " And Cast(Convert(Varchar,b.BillDate,106) as Date) >= '" + FrmDate + "' And Cast(Convert(Varchar,b.BillDate,106) as Date) <= '" + ToDate + "'";
+                condition += " And Cast(Convert(Varchar,b.rectimestamp,106) as Date) >= '" + FrmDate + "' And Cast(Convert(Varchar,b.rectimestamp,106) as Date) <= '" + ToDate + "'";
 
                 // condition += " And b.BillDate >= '" + FrmDate + "' And b.BillDate <= '" + ToDate + "'";
             }
 
-            str = "select Replace(Convert(Varchar,b.BillDate,106),' ','-') as [Bill Date], a.Idno, (a.MemFirstName + ' ' + a.MemLastName) As [Member Name], " +
+            str = "select Replace(Convert(Varchar, b.rectimestamp,106),' ','-')+' '+CONVERT(varchar(15),CAST(b.rectimestamp AS TIME),22) as [Bill Date], a.Idno, (a.MemFirstName + ' ' + a.MemLastName) As [Member Name], " +
                   "Case when d.LegNo = 1 then 'Left' else 'Right' end as [Group Name], " +
                   "b.RepurchIncome as [Business] " +
                   "from M_MemberMaster as a with(nolock) inner Join M_MemTreeRelation as d with(nolock) on a.Formno = d.FormnoDwn " +

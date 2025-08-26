@@ -124,7 +124,8 @@
                         <div class="form-block mx-auto" style="border-radius: 5px;">
                             <div class="text-center mb-5">
                                 <h3 class="text-uppercase">
-                                    <img src="<%=Session["LogoUrl"].ToString ()%>" style="max-width: 250px;">
+                                    <!-- <img src="images/logo.png" style="max-width: 250px;"> -->
+                                    <img src="<%=Session["LogoUrl"].ToString ()%>" style="max-width: 250px; background-color: #0d3f55; border-radius: 7px;">
                                 </h3>
                                 <hr>
                                 <h5>Login - Registration
