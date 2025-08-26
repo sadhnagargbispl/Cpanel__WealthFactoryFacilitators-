@@ -738,6 +738,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                         {
                             string membername = "";
                             string Email = "";
+                            string mobl = "";
                             string Password = "";
                             DataTable Dtsms = new DataTable();
                             string strSql = string.Empty;
@@ -746,7 +747,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                             DataSet Ds = new DataSet();
 
                             strSql = " SELECT TOP 1 a.IDNO,a.formno,b.IsBill,a.Passw,a.MemFirstname,";
-                            strSql += "a.MemlastName,a.Email FROM m_MemberMaster as a,m_KitMaster as ";
+                            strSql += "a.MemlastName,a.Email,a.mobl FROM m_MemberMaster as a,m_KitMaster as ";
                             strSql += "b where a.kitid=b.kitid And Email = '" + txtEMailId.Text.Trim() + "' Order By mid Desc ";
                             Dtsms = SqlHelper.ExecuteDataset(constr, CommandType.Text, strSql).Tables[0];
                             if ((Dtsms.Rows.Count > 0))
@@ -755,6 +756,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                                 Email = Dtsms.Rows[0]["Email"].ToString();
                                 LastInsertID = Dtsms.Rows[0]["IDNO"].ToString();
                                 Password = Dtsms.Rows[0]["Passw"].ToString();
+                                mobl= Dtsms.Rows[0]["mobl"].ToString();
                                 Session["Kit"] = Dtsms.Rows[0]["IsBill"].ToString();
                             }
                             else
@@ -768,7 +770,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                             }
                             CmdSave.Enabled = true;
                             Session["LASTID"] = LastInsertID;
-                            SendToMemberMail(LastInsertID, Email, membername, Password);
+                            SendToMemberMail(LastInsertID, Email, membername, Password, mobl);
                             Session["Join"] = "YES";
                             scrname = "<SCRIPT language='javascript'>alert('Registration Successfully.Your IdNo is " + LastInsertID + "');" + "</SCRIPT>";
                             ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "alert", "alert('Try Again Later.');", true);
@@ -806,7 +808,7 @@ public partial class Newjoining1 : System.Web.UI.Page
         }
     }
 
-    public bool SendToMemberMail(string IdNo, string Email, string MemberName, string Password)
+    public bool SendToMemberMail(string IdNo, string Email, string MemberName, string Password, string mobl)
     {
         try
         {
@@ -817,23 +819,25 @@ public partial class Newjoining1 : System.Web.UI.Page
             StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
                      "<tr>" +
                      "<td>" +
-                     "Dear " + MemberName + ",<br />" +
-                     "You recently requested to retrieve your login details for your Wealth Factory account. <br />" +
-                     "As requested, here are your secure account credentials:<br />" +
-                      "<strong>User ID: " + IdNo + "</strong><br />" +
-                     "<strong>Password: " + Password + "</strong><br />" +
-                     "<strong>Transaction Password: " + Password + "</strong><br />" +
-                     "Please ensure you store this information securely and do not share it with anyone under any circumstances. <br />" +
-                     "If you did not request this information, please contact our support team immediately so we can secure your account. <br />" +
-                     "Thank you for choosing Wealth Factory; Where opportunities meet growth.<br />" +
-                     "Warm regards,<br />Team Wealth Factory" +
+                     "Dear " + MemberName + ",<br /><br />" +
+                     "Welcome to Wealth Factory - Where Opportunities Meet Growth! <br /><br />" +
+                     "We're thrilled to welcome you to the Wealth Factory community! Your account has been successfully created, and you're now part of a trusted platform designed to unlock high-potential opportunities across real estate, media, finance, and beyond.<br />" +
+                     "Here are your secure login details:<br />"+
+                     "<strong>User ID: " + IdNo + "</strong><br />" +
+                     "<strong>Registered Mobile: " + mobl + "</strong><br />" +
+                     "<strong>Login Password: " + Password + "</strong><br />" +
+                     "<strong>Transaction Password: " + Password + "</strong><br /><br />" +
+                     "Please store these credentials securely and do not share them with anyone. <br /><br />" +
+                     "Login to your dashboard and explore verified investment options. <br />If you need help, our support team is ready to assist you at every step. <br /> <br />" +
+                     "Let's build something extraordinary together. <br />" +
+                     "Warm wishes, <br />Team Wealth Factory" +
                      "<br />" +
                      "<br />" +
                      "</td>" +
                      "</tr>" +
                      "</table>";
 
-            MyMessage.Subject = "Your Wealth Factory Login Credentials";
+            MyMessage.Subject = "Welcome to Wealth Factory - Your Account Is Now Active!";
             MyMessage.Body = StrMsg;
             MyMessage.IsBodyHtml = true;
             //System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com");

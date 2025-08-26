@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -146,11 +146,11 @@
                             </div>
                             <div class="d-sm-flex mb-5 align-items-center">
                                 <span class="ml-auto">
-                                    <%--    <a href="Forgot.aspx" 
+                                        <a href="Forgot.aspx" 
                                     onclick="return hs.htmlExpand(this, { objectType: 'iframe',width: 525,height: 280,marginTop : 0 } )"
-                                    class="forgot-pass">Forgot Password</a>--%>
-                                    <a href="#"
-                                        class="forgot-pass">Forgot Password</a>
+                                    class="forgot-pass">Forgot Password</a>
+                                   <%-- <a href="#"
+                                        class="forgot-pass">Forgot Password</a>--%>
                                 </span>
                             </div>
                             <asp:Button ID="BtnSubmit" runat="server" Style="border-radius: 50px;" Text="Sign In" class="btn btn-block py-2 btn-primary btncls" OnClick="BtnSubmit_Click" />

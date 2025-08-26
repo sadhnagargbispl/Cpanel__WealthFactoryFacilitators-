@@ -1,4 +1,4 @@
-﻿using System.Data.SqlClient;
+using System.Data.SqlClient;
 using System.IO;
 using System.Net;
 using System;
@@ -181,18 +181,36 @@ public partial class Forgot : System.Web.UI.Page
             System.Net.Mail.MailAddress SendFrom = new System.Net.Mail.MailAddress(Session["CompMail"].ToString());
             System.Net.Mail.MailAddress SendTo = new System.Net.Mail.MailAddress(Email);
             System.Net.Mail.MailMessage MyMessage = new System.Net.Mail.MailMessage(SendFrom, SendTo);
+            //StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
+            //         "<tr>" +
+            //         "<td>" +
+            //         "<span style=\"color: #0099CC; font-weight: bold;\"><h2>Dear " + MemberName + ",</h2></span><br />" +
+            //         "Your Forgot Login password is <strong>" + Password + "</strong> and Transaction password is <strong>" + EPassword + "</strong> of IDNO <strong>" + IdNo + "</strong>.<br/> For login go to our site : <a href=\"" + Session["CompWeb"] + "\" target=\"_blank\" style=\"color:#0000FF; text-decoration:underline;\">" + Session["CompName"] + "</a><br/>Thank you!<br> Regards : <strong>" + Session["CompName"] + "</strong>" +
+            //         "<br />" +
+            //         "<br />" +
+            //         "</td>" +
+            //         "</tr>" +
+            //        "</table>";
             StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
-                     "<tr>" +
-                     "<td>" +
-                     "<span style=\"color: #0099CC; font-weight: bold;\"><h2>Dear " + MemberName + ",</h2></span><br />" +
-                     "Your Forgot Login password is <strong>" + Password + "</strong> and Transaction password is <strong>" + EPassword + "</strong> of IDNO <strong>" + IdNo + "</strong>.<br/> For login go to our site : <a href=\"" + Session["CompWeb"] + "\" target=\"_blank\" style=\"color:#0000FF; text-decoration:underline;\">" + Session["CompName"] + "</a><br/>Thank you!<br> Regards : <strong>" + Session["CompName"] + "</strong>" +
-                     "<br />" +
-                     "<br />" +
-                     "</td>" +
-                     "</tr>" +
-                    "</table>";
+         "<tr>" +
+         "<td>" +
+         "Dear " + MemberName + ",<br />" +
+         "You recently requested to retrieve your login details for your Wealth Factory account. <br />" +
+         "As requested, here are your secure account credentials:<br />" +
+          "<strong>User ID: " + IdNo + "</strong><br />" +
+         "<strong>Password: " + Password + "</strong><br />" +
+         "<strong>Transaction Password: " + Password + "</strong><br />" +
+         "Please ensure you store this information securely and do not share it with anyone under any circumstances. <br />" +
+         "If you did not request this information, please contact our support team immediately so we can secure your account. <br />" +
+         "Thank you for choosing Wealth Factory; Where opportunities meet growth.<br />" +
+         "Warm regards,<br />Team Wealth Factory" +
+         "<br />" +
+         "<br />" +
+         "</td>" +
+         "</tr>" +
+         "</table>";
 
-            MyMessage.Subject = "Forgot Password";
+            MyMessage.Subject = "Your Wealth Factory Login Credentials";
             MyMessage.Body = StrMsg;
             MyMessage.IsBodyHtml = true;
 
