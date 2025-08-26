@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -124,7 +124,7 @@
                         <div class="form-block mx-auto" style="border-radius: 5px;">
                             <div class="text-center mb-5">
                                 <h3 class="text-uppercase">
-                                    <img src="images/logo.png" style="max-width: 250px;">
+                                    <img src="<%=Session["LogoUrl"].ToString ()%>" style="max-width: 250px;">
                                 </h3>
                                 <hr>
                                 <h5>Login - Registration
