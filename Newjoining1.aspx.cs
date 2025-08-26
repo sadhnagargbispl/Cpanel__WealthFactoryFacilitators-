@@ -533,7 +533,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                             string strSql = ObjDAL.Isostart + " select Count(Email) as Email from " + ObjDAL.dBName + "..M_Membermaster where Email='" + txtEMailId.Text.Trim() + "' " + ObjDAL.IsoEnd;
                             DsEmail = SqlHelper.ExecuteDataset(constr1, CommandType.Text, strSql);
                             DtEmail = DsEmail.Tables[0];
-                            if ((int)DtEmail.Rows[0]["Email"] >= 100000)
+                            if ((int)DtEmail.Rows[0]["Email"] >= 1)
                             {
                                 CmdSave.Enabled = true;
                                 chkterms.Checked = false;
@@ -568,7 +568,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                             string strSql = ObjDAL.Isostart + "select Count(mobl) as mobileno from " + ObjDAL.dBName + "..M_Membermaster where Mobl='" + txtMobileNo.Text.Trim() + "' " + ObjDAL.IsoEnd;
                             Dsmob = SqlHelper.ExecuteDataset(cnn, CommandType.Text, strSql);
                             Dt1 = Dsmob.Tables[0];
-                            if ((int)Dt1.Rows[0]["mobileno"] >= 100000)
+                            if ((int)Dt1.Rows[0]["mobileno"] >= 1)
                             {
                                 CmdSave.Enabled = true;
                                 chkterms.Checked = false;
@@ -836,7 +836,8 @@ public partial class Newjoining1 : System.Web.UI.Page
             MyMessage.Subject = "Your Wealth Factory Login Credentials";
             MyMessage.Body = StrMsg;
             MyMessage.IsBodyHtml = true;
-            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com");
+            //System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.gmail.com");
+            SmtpClient smtp = new SmtpClient(Session["MailHost"].ToString());
             smtp.Port = 587;
             smtp.EnableSsl = true;
             smtp.UseDefaultCredentials = false;
@@ -1163,7 +1164,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                         TxtPassword.ReadOnly = false;
                         RbtnLegNo.Enabled = false;
                         txtFrstNm.ReadOnly = true;
-                        //ddlCountryNAme.Enabled = false;
+                        ddlCountryNAme.Enabled = false;
                         txtMobileNo.ReadOnly = true;
                         txtEMailId.ReadOnly = true;
                         //txtaadharno.ReadOnly = true;
@@ -1680,7 +1681,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                 string strSql = ObjDAL.Isostart + "select Count(mobl) as mobileno from " + ObjDAL.dBName + "..M_Membermaster where Mobl='" + txtMobileNo.Text.Trim() + "' " + ObjDAL.IsoEnd;
                 Dsmob = SqlHelper.ExecuteDataset(constr1, CommandType.Text, strSql);
                 Dt1 = Dsmob.Tables[0];
-                if (Convert.ToInt32(Dt1.Rows[0]["mobileno"]) >= 100000)
+                if (Convert.ToInt32(Dt1.Rows[0]["mobileno"]) >= 1)
                 {
                     txtMobileNo.Text = "";
                     CmdSave.Enabled = true;
@@ -1705,7 +1706,7 @@ public partial class Newjoining1 : System.Web.UI.Page
                 DataTable Dt = new DataTable();
                 string strSql = ObjDAL.Isostart + " select Count(Email) as Email from " + ObjDAL.dBName + "..M_Membermaster where Email='" + txtEMailId.Text.Trim() + "' " + ObjDAL.IsoEnd;
                 Dt = SqlHelper.ExecuteDataset(constr1, CommandType.Text, strSql).Tables[0];
-                if (Convert.ToInt32(Dt.Rows[0]["Email"]) >= 100000)
+                if (Convert.ToInt32(Dt.Rows[0]["Email"]) >= 1)
                 {
                     txtEMailId.Text = "";
                     CmdSave.Enabled = true;
@@ -1918,4 +1919,6 @@ public partial class Newjoining1 : System.Web.UI.Page
         }
     }
 
+
+   
 }

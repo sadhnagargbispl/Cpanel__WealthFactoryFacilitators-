@@ -611,7 +611,7 @@ Permanent Address</h5>--%>
                             <label>
                             Mobile No.<span class="red">*</span></label>
                       <asp:TextBox ID="txtMobileNo" onkeypress="return isNumberKey(event);" CssClass="form-control validate[required,custom[mobile]]"
-                            runat="server" MaxLength="10" ValidationGroup="eInformation" autocomplete="off"  ></asp:TextBox>
+                            runat="server" MaxLength="10" ValidationGroup="eInformation" autocomplete="off" AutoPostBack="true" OnTextChanged="txtMobileNo_TextChanged"  ></asp:TextBox>
                             
                             </div>
              
@@ -626,7 +626,7 @@ Permanent Address</h5>--%>
                             <label>
                                 E-Mail ID<span class="red">*</span></label>
                             <asp:TextBox ID="txtEMailId" CssClass="form-control validate[custom[email]]" TabIndex="31"
-                                runat="server" autocomplete="off"></asp:TextBox>
+                                runat="server" autocomplete="off" AutoPostBack="true" OnTextChanged="txtEMailId_TextChanged" ></asp:TextBox>
                         </div>
                         <div id="Div9" class="form-group greybt" runat="server" visible="false" >
                             <label>
@@ -838,14 +838,15 @@ Permanent Address</h5>--%>
                                         SetFocusOnError="true" Text="*" ValidationGroup="Submitbtn"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-md-4">
+                            <div class="col-lg-12 col-md-12">
                                 <asp:Button ID="BtnPassword" runat="server" ValidationGroup="Submitbtn" Text="Submit"
-                                    class="btn btn-success btn-flat" Width="150px" OnClick="BtnPassword_Click"/>
-                                &nbsp;<asp:Button ID="btngenerate" runat="server" Text="Re-Generate OTP" class="btn btn-success btn-flat"
-                                    Width="150px"  OnClick ="btngenerate_Click" />
+                                    class="btn btn-success btn-flat" OnClick="BtnPassword_Click"/>
+                                &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="btngenerate" runat="server" Text="Re-Generate OTP" class="btn btn-success btn-flat"
+                                     OnClick ="btngenerate_Click" />
                                 <br />
                             </div>
                         </div>
+                         <br />
                       </label>
                     </div>
                     <asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowMessageBox="True"

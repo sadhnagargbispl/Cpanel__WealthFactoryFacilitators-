@@ -684,7 +684,7 @@ hr {
 
    
     input, button {
-        float: left;
+        /*float: left;*/
         font-size: 1em;
         padding: 3px 6px;
         margin: 0;
