@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.master" AutoEventWireup="true" CodeFile="Reward.aspx.cs" Inherits="Reward" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.master" AutoEventWireup="true" CodeFile="Reward.aspx.cs" Inherits="Reward" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
@@ -118,9 +118,9 @@
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
                                                                                     <asp:BoundField DataField="RDays" HeaderText="Total Days"></asp:BoundField>
-                                                                                    <asp:BoundField DataField="Newpair" HeaderText="Matching"></asp:BoundField>
-                                                                                    <asp:BoundField DataField="Reward" HeaderText="Reward (Time Limit)"></asp:BoundField>
-                                                                                    <asp:BoundField DataField="Notimelimit" HeaderText="Reward (No Time Limits)"></asp:BoundField>
+                                                                                    <asp:BoundField DataField="Newpair" HeaderText="Pair"></asp:BoundField>
+                                                                                    <asp:BoundField DataField="Reward" HeaderText="Reward "></asp:BoundField>
+                                                                                  <%--  <asp:BoundField DataField="Notimelimit" HeaderText="Reward (No Time Limits)"></asp:BoundField>--%>
                                                                                 </Columns>
                                                                             </asp:GridView>
                                                                         </div>

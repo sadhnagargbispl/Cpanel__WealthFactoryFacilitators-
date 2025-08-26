@@ -156,7 +156,7 @@ public partial class Reward : System.Web.UI.Page
 
             if (Dt.Rows.Count > 0)
             {
-                Session["RemainDays"] = Dt.Rows[0]["Remaining Days"];
+                Session["RemainDays"] = Dt.Rows[0]["Completed Pair"];
                 GrdNext.DataSource = Dt;
                 GrdNext.DataBind();
             }
