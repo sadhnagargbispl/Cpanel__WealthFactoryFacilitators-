@@ -1222,3 +1222,12 @@ Thread was being aborted.
 http://localhost:53556/IdActivation.aspx:  26-Aug-2025 11:16:15:737 
 Object reference not set to an instance of an object.
 --------------------------------------------------------
+http://localhost:55024/Reward.aspx:  26-Aug-2025 06:52:01:068
+A field or property with the name 'achievedReward' was not found on the selected data source.
+--------------------------------------------------------
+http://localhost:55024/Reward.aspx:  26-Aug-2025 07:14:09:922 
+Input string was not in a correct format.
+--------------------------------------------------------
+http://localhost:55024/Reward.aspx:  26-Aug-2025 07:15:25:629 
+Input string was not in a correct format.
+--------------------------------------------------------

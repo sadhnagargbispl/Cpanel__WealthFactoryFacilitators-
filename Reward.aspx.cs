@@ -41,20 +41,21 @@ public partial class Reward : System.Web.UI.Page
     {
         try
         {
-            string str = "select * from M_RewardFinal where formno='" + Session["Formno"] + "'";
+            //string str = "select * from M_RewardFinal where formno='" + Session["Formno"] + "'";
+            string str = "select * from MstRewardAchievers where formno='" + Session["Formno"] + "'";
             DataTable Dt = new DataTable();
             Dt = obj.GetData(str);
             string sql;
 
             if (Dt.Rows.Count > 0)
             {
-                sql = "select Reward,Amount,Cast(RDays as int) as RDays, " +
+                sql = "select Reward,Amount,'Life Time' as RDays, " +
                       "0 as RemainingDays, " +
                       "Notimelimit,newpair from M_rewardmaster as a " +
                       "Left Join M_membermaster as c On c.Formno='" + Session["FormNo"] + "' where " +
                       "RewardId Not In(Select Distinct(Rewardid)+1 " +
                       "from M_RewardFinal where Formno='" + Session["FormNo"] + "' Group by Formno,Rewardid ) and RewardId>1";
-
+                //Cast(RDays as int) as RDays,
                 Dt = new DataTable();
                 Dt = obj.GetData(sql);
 
@@ -64,11 +65,11 @@ public partial class Reward : System.Web.UI.Page
                     {
                         if (i == 0)
                         {
-                            Dt.Rows[i]["RemainingDays"] = Convert.ToInt32(Session["RemainDays"]) + Convert.ToInt32(Dt.Rows[i]["RDays"]);
+                            //Dt.Rows[i]["RemainingDays"] = Convert.ToInt32(Session["RemainDays"]) + Convert.ToInt32(Dt.Rows[i]["RDays"]);
                         }
                         else
                         {
-                            Dt.Rows[i]["RemainingDays"] = Convert.ToInt32(Dt.Rows[i - 1]["RemainingDays"]) + Convert.ToInt32(Dt.Rows[i]["RDays"]);
+                            //Dt.Rows[i]["RemainingDays"] = Convert.ToInt32(Dt.Rows[i - 1]["RemainingDays"]) + Convert.ToInt32(Dt.Rows[i]["RDays"]);
                         }
                     }
 
@@ -87,14 +88,14 @@ public partial class Reward : System.Web.UI.Page
             }
             else
             {
-                string sql1 = "select Rank,Reward,Amount,Cast(RDays as int) as RDays,Cast(CummRdays as Int) as Cummrdays, " +
+                string sql1 = "select Rank,Reward,Amount,'Life Time' as RDays,Cast(CummRdays as Int) as Cummrdays, " +
                               "0 as RemainingDays, Case when DateDiff(Day,c.UpgradeDate,Getdate())>Cast(CummRDays as int) then " +
                               "0 else Cast(CummRDays as int)-DateDiff(Day,c.UpgradeDate,Getdate()) end as RemainDays, " +
                               "Notimelimit,Pair as newpair,c.ActiveStatus from M_rewardmaster as a " +
                               "Left Join M_membermaster as c On c.Formno='" + Session["FormNo"] + "' where " +
                               "RewardId Not In(Select Distinct(Rewardid)+1 " +
                               "from M_RewardFinal where Formno='" + Session["FormNo"] + "' Group by Formno,Rewardid ) and RewardId>1";
-
+                //Cast(RDays as int) as RDays
                 Dt = new DataTable();
                 Dt = obj.GetData(sql1);
                 int k = 0;
@@ -113,12 +114,12 @@ public partial class Reward : System.Web.UI.Page
                         }
                         else if (Convert.ToInt32(Dt.Rows[i]["RemainDays"]) > 0 && k == 0)
                         {
-                            Dt.Rows[i]["RemainingDays"] = Convert.ToInt32(Session["RemainDays"]) + Convert.ToInt32(Dt.Rows[i]["RemainDays"]);
+                           //Dt.Rows[i]["RemainingDays"] = Convert.ToInt32(Session["RemainDays"]) + Convert.ToInt32(Dt.Rows[i]["RemainDays"]);
                             k++;
                         }
                         else
                         {
-                            Dt.Rows[i]["RemainingDays"] = Convert.ToInt32(Dt.Rows[i - 1]["RemainingDays"]) + Convert.ToInt32(Dt.Rows[i]["RDays"]);
+                            //Dt.Rows[i]["RemainingDays"] = Convert.ToInt32(Dt.Rows[i - 1]["RemainingDays"]) + Convert.ToInt32(Dt.Rows[i]["RDays"]);
                         }
                     }
 

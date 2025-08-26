@@ -58,9 +58,9 @@
                                                                                     </asp:TemplateField>
 
                                                                                     <asp:BoundField DataField="Reward" HeaderText="Reward" HeaderStyle-HorizontalAlign="Center" />
-                                                                                    <asp:BoundField DataField="achievedReward" HeaderText="Reward Type" HeaderStyle-HorizontalAlign="Center" />
+                                                                                   <%-- <asp:BoundField DataField="achievedReward" HeaderText="Reward Type" HeaderStyle-HorizontalAlign="Center" />--%>
                                                                                     <asp:BoundField DataField="AchieveDate" HeaderText="Achieve Date" HeaderStyle-HorizontalAlign="Center" />
-                                                                                    <asp:TemplateField HeaderText="Redeem" Visible="false" HeaderStyle-HorizontalAlign="Center"
+                                                                                   <%-- <asp:TemplateField HeaderText="Redeem" Visible="false" HeaderStyle-HorizontalAlign="Center"
                                                                                         HeaderStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle">
                                                                                         <ItemTemplate>
                                                                                             <asp:Label ID="lblreward" runat="server" Text='<%# Eval("Rewardid") %>' Visible="false"></asp:Label>
@@ -70,7 +70,7 @@
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
                                                                                     <asp:BoundField DataField="RedeemDate" HeaderText="Redeem Date" Visible="false" HeaderStyle-HorizontalAlign="Center"
-                                                                                        HeaderStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" />
+                                                                                        HeaderStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" />--%>
                                                                                 </Columns>
                                                                             </asp:GridView>
                                                                             <asp:GridView ID="GrdPending1" runat="server" CssClass="table table-striped table-bordered"
