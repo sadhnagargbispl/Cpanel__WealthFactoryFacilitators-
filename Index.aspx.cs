@@ -13,11 +13,14 @@ using System.Security.Cryptography;
 using Microsoft.Ajax.Utilities;
 using System.Net;
 using System.Security.Policy;
+using AjaxControlToolkit.HtmlEditor.ToolbarButtons;
+using DocumentFormat.OpenXml.Spreadsheet;
 
 public partial class Index : System.Web.UI.Page
 {
     DAL Obj = new DAL();
     DataSet Ds;
+    DataSet Das;
     string IsoStart;
     string IsoEnd;
     SqlDataReader dr;
@@ -31,6 +34,12 @@ public partial class Index : System.Web.UI.Page
             {
                 if (!Page.IsPostBack)
                 {
+                    if (Session["ShowDisclaimer"] != null && (bool)Session["ShowDisclaimer"] == true)
+                    {
+                        LoadDisclaimer();
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "Popup", "showDisclaimer();", true);
+                        Session["ShowDisclaimer"] = false; // Only first time
+                    }
                     LoadTeam();
                 }
             }
@@ -68,6 +77,131 @@ public partial class Index : System.Web.UI.Page
             Obj.WriteToFile(text + ex.Message);
             Response.Write("Try later.");
         }
+    }
+    private void LoadDisclaimer()
+    {
+        // Get Disclaimer from DB
+        string query = "Exec Sp_GetDisclaimerNoticePopup";
+        Das = SqlHelper.ExecuteDataset(ConfigurationManager.ConnectionStrings["constr"].ConnectionString, CommandType.Text, query);
+        // DB logic here (SqlConnection, SqlCommand etc.)
+        // Example:
+        if (Das.Tables[0].Rows.Count > 0)
+        {
+            lblTitle.Text = Das.Tables[0].Rows[0]["Title"].ToString(); 
+            lblBody.Text = Das.Tables[0].Rows[0]["Body"].ToString();
+        }
+    }
+    protected void btnProceed_Click(object sender, EventArgs e)
+    {
+        string subject = lblTitle.Text;
+        string body = lblBody.Text;
+
+        DataTable dt;
+        string sql = "";
+        string userEmail = "";
+
+        string StrMsg = "";
+        System.Net.Mail.MailAddress SendFrom = new System.Net.Mail.MailAddress(Session["CompMail"].ToString());
+        System.Net.Mail.MailAddress SendTo = new System.Net.Mail.MailAddress(lblEmail.Text);
+        System.Net.Mail.MailMessage MyMessage = new System.Net.Mail.MailMessage(SendFrom, SendTo);
+        //StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify; width:100%\">" +
+        // "<tr>" +
+        // "<td>" +
+        // "<span>Dear <strong>" + lblUserNAme.Text + "</strong>,</span><br /><br />" +
+        // "Thank you for logging into <strong>Wealth Factory</strong>.<br /><br />" +
+        // "Please note the following important disclaimer as you proceed to explore opportunities through our platform:<br /><br />" +
+
+        // "<b>Disclaimer</b><br />" +
+        // "Wealth Factory acts solely as an introducer and is not a party to any financial, legal, or commercial transaction between you and any third-party website or business you may be redirected to. Our role is limited to facilitating access by connecting interested users with offerings from independent third-party entities.<br /><br />" +
+
+        // "All transactions, agreements, and communications are conducted directly between you and the third-party website/business, which holds sole responsibility for their content, execution, and fulfillment.<br /><br />" +
+
+        // "Wealth Factory:<br />" +
+        // "<ul style='margin:0; padding-left:20px;'>" +
+        //     "<li>Does not verify or monitor the performance or enforceability of third-party transactions</li>" +
+        //     "<li>Is not liable for any disputes, delays, or losses arising from such dealings</li>" +
+        //     "<li>May, where reasonably necessary, share relevant user details and assist with basic coordination at the point of introduction</li>" +
+        // "</ul><br />" +
+
+        // "By continuing, you acknowledge that your engagement with any third-party service is at your own discretion and risk, and that Wealth Factory is not liable for the outcome of any such interaction.<br /><br />" +
+
+        // "If you have any questions, our support team is here to assist you.<br /><br />" +
+
+        // "Warm regards,<br />" +
+        // "<b>Team Wealth Factory</b>" +
+        // "</td>" +
+        // "</tr>" +
+        // "</table>";
+        StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; " +
+                "line-height:23px; text-align:justify; width:100%; border:1px solid #ccc; border-radius:6px;\">" +
+
+  // 🔹 Header Row
+  "<tr>" +
+    "<td style='background:#009688; color:#fff; font-size:16px; font-weight:bold; text-align:center; padding:8px; border-radius:6px 6px 0 0;'>" +
+      "Important Disclaimer" +
+    "</td>" +
+  "</tr>" +
+
+  // 🔹 Body Row
+  "<tr>" +
+    "<td style='padding:12px;'>" +
+      "<span>Dear <strong>" + lblUserNAme.Text + "</strong>,</span><br /><br />" +
+      "Thank you for logging into <strong>Wealth Factory</strong>.<br /><br />" +
+      "Please note the following important disclaimer as you proceed to explore opportunities through our platform:<br /><br />" +
+
+      "<b>Disclaimer</b><br />" +
+      "Wealth Factory acts solely as an introducer and is not a party to any financial, legal, or commercial transaction between you and any third-party website or business you may be redirected to. Our role is limited to facilitating access by connecting interested users with offerings from independent third-party entities.<br /><br />" +
+
+      "All transactions, agreements, and communications are conducted directly between you and the third-party website/business, which holds sole responsibility for their content, execution, and fulfillment.<br /><br />" +
+
+      "Wealth Factory:<br />" +
+      "<ul style='margin:0; padding-left:20px;'>" +
+          "<li>Does not verify or monitor the performance or enforceability of third-party transactions</li>" +
+          "<li>Is not liable for any disputes, delays, or losses arising from such dealings</li>" +
+          "<li>May, where reasonably necessary, share relevant user details and assist with basic coordination at the point of introduction</li>" +
+      "</ul><br />" +
+
+      "By continuing, you acknowledge that your engagement with any third-party service is at your own discretion and risk, and that Wealth Factory is not liable for the outcome of any such interaction.<br /><br />" +
+
+      "If you have any questions, our support team is here to assist you.<br /><br />" +
+
+      "Warm regards,<br />" +
+      "<b>Team Wealth Factory</b>" +
+    "</td>" +
+  "</tr>" +
+"</table>";
+
+
+        MyMessage.Subject = subject;
+        MyMessage.Body = StrMsg;
+        //MyMessage.Body = body;
+        MyMessage.IsBodyHtml = true;
+
+        System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient(Session["MailHost"].ToString());
+        smtp.Port = 587;
+        smtp.EnableSsl = true;
+        smtp.UseDefaultCredentials = false;
+        smtp.Credentials = new System.Net.NetworkCredential(Session["CompMail"].ToString(), Session["MailPass"].ToString());
+        smtp.Send(MyMessage);
+        //return true;
+        //// Send Email
+        //System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
+        //mail.To.Add("user@example.com");  // Replace with login user email
+        //mail.From = new System.Net.Mail.MailAddress("noreply@yourdomain.com");
+        //mail.Subject = subject;
+        //mail.Body = body;
+        //mail.IsBodyHtml = false;
+
+        //System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient();
+        //smtp.Host = "smtp.yourserver.com"; // Replace with SMTP server
+        //smtp.Port = 587;
+        //smtp.Credentials = new System.Net.NetworkCredential("username", "password");
+        //smtp.EnableSsl = true;
+        //smtp.Send(mail);
+
+        // Redirect to Home/Index page after sending mail
+        Response.Redirect("Index.aspx",false);
+        
     }
     private void LoadTeam()
     {

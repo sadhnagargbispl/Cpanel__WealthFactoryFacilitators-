@@ -292,6 +292,15 @@
     from { transform: translateY(0); }
     to { transform: translateY(-1000px); }
 }
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
 </style>
 
 </asp:Content>
@@ -920,7 +929,7 @@ Permanent Address</h5>--%>
         </div>
         </section>
         </div>
-        <div id="myModalTerm" class="modal fade" role="dialog">
+        <%--<div id="myModalTerm" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <!-- Modal content-->
                 <div class="modal-content">
@@ -1098,7 +1107,74 @@ c. Suspend, restrict, or permanently terminate the User's access to the Website,
                     </div>
                 </div>
             </div>
+        </div>--%>
+    <div id="myModalTerm" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg"> <!-- Large size for readability -->
+    <div class="modal-content" style="border-radius:10px; overflow:hidden; margin:2px;">
+
+      <!-- Header -->
+      <div class="modal-header" style="background:#00a36c; color:#fff; border-bottom:none;">
+        <h4 class="modal-title" style="font-weight:bold;">
+          Terms & Conditions
+        </h4>
+        <button type="button" class="close" data-dismiss="modal" style="color:#fff; opacity:1; font-size:14px; text-align:center;">
+          &times;
+        </button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body" style="max-height:70vh; overflow-y:auto; padding:25px; font-size:14px; color:#333; line-height:1.6;">
+        
+        <p>
+          These Terms and Conditions ("Terms") govern your use of the website <strong>www.wealthfactory.life</strong>
+          owned and operated by <strong>Wealth Factory</strong>, and shall apply to all users, whether individuals
+          or entities, including potential investors, clients, browsers, affiliates, and third-party businesses.
+        </p>
+
+        <!-- Section Example -->
+        <h5 style="color:#00a36c; font-weight:600; margin-top:20px;">1. DEFINITIONS</h5>
+        <p><strong>1.1 "User"</strong> refers to any natural or legal person who accesses, views, interacts with, or uses the Website.</p>
+        <p><strong>1.2 "Third-Party Businesses"</strong> refer to independent entities or partners listed, referred, or linked to from the Website.</p>
+        <p><strong>1.3 "Services"</strong> refers to information dissemination, lead facilitation, marketing, etc. offered through the Website.</p>
+
+        <h5 style="color:#00a36c; font-weight:600; margin-top:20px;">2. ELIGIBILITY AND LEGAL COMPETENCE</h5>
+        <p>
+          <strong>2.1</strong> By accessing the Website, the User expressly represents and warrants:
+        </p>
+        <ul style="padding-left:20px;">
+          <li>That the User is at least 18 years of age.</li>
+          <li>That the User is of sound mind and competent under applicable laws.</li>
+          <li>That the User has full legal authority to enter into binding contracts.</li>
+          <li>That the User is not barred by any court or regulatory body.</li>
+        </ul>
+        <p><strong>2.2</strong> If the User is under 18, they must not access or use this Website.</p>
+        <p><strong>2.3</strong> Wealth Factory reserves the right to require proof of age, identity, or competence at any time.</p>
+
+        <!-- Example of Risk Section with Highlight -->
+        <h5 style="color:#00a36c; font-weight:600; margin-top:20px;">6. RISK DISCLOSURE</h5>
+        <div style="background:#fff8e1; border-left:4px solid #f39c12; padding:10px 15px; margin-bottom:15px;">
+          <p style="margin:0;">
+            By accessing or engaging with any product, service, or third-party platform introduced through Wealth Factory,
+            you expressly acknowledge and accept that all such interactions are inherently subject to commercial,
+            financial, and market risks — including the potential loss of capital.
+          </p>
         </div>
+        <p>Wealth Factory does not offer fixed-return or risk-free investment opportunities. Users must assume all risks.</p>
+
+        <!-- Add more sections same way with h5 headings + styled paragraphs -->
+        
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer" style="border-top:none; padding:15px 25px;">
+      <%--  <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Accept</button>--%>
+      </div>
+
+    </div>
+  </div>
+</div>
+
         <div id="myModalPolicy" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <!-- Modal content-->

@@ -6345,7 +6345,7 @@ button.close {
 }
 
     .modal-header .close {
-        margin-top: -2px;
+        margin-top: -24px;
     }
 
 .modal-title {
@@ -6356,7 +6356,7 @@ button.close {
 .modal-body {
     position: relative;
     /*padding: 15px;*/
-    background: #0d2c65c9;
+    /*background: #0d2c65c9;*/
         background-size: cover;
 }
 

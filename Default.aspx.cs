@@ -1,4 +1,4 @@
-﻿using System.Data.SqlClient;
+using System.Data.SqlClient;
 using System.IO;
 using System.Net;
 using System;
@@ -8,6 +8,7 @@ using System.Collections;
 using DocumentFormat.OpenXml.Spreadsheet;
 using System.Web;
 using System.Web.UI;
+using DocumentFormat.OpenXml.Office.Word;
 
 public partial class _Default : System.Web.UI.Page
 {
@@ -26,6 +27,7 @@ public partial class _Default : System.Web.UI.Page
     ModuleFunction objModuleFun;
     string constr = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
     string constr1 = ConfigurationManager.ConnectionStrings["constr1"].ConnectionString;
+    private SqlCommand cmd = new SqlCommand();
     protected void Page_Load(object sender, EventArgs e)
 
     {
@@ -66,7 +68,9 @@ public partial class _Default : System.Web.UI.Page
                     Str = Crypto.Decrypt(Request["lgnT"].Replace(" ", "+"));
 
                     Str = Str.Replace("uid=", "þ").Replace("&pwd=", "þ").Replace("&mobile=", "þ");
-                    string[] qrystr = Str.Split('þ');
+                    //string[] qrystr = Str.Split('þ');
+                    // Agar aapko "Ã¾" string ke hisaab se split karna hai:
+                    string[] qrystr = Str.Split(new string[] { "Ã¾" }, StringSplitOptions.None);
                     if ((DateTime.Now.Day.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Year.ToString() + (DateTime.Now.Month - 1).ToString() == Request["ID"]) ||
     (DateTime.Now.Day.ToString() + (DateTime.Now.Hour - 1).ToString() + DateTime.Now.Year.ToString() + (DateTime.Now.Month - 1).ToString() == Request["ID"]))
 
@@ -215,7 +219,47 @@ public partial class _Default : System.Web.UI.Page
                     Session["ActivationDate"] = dt.Rows[0]["ActivationDate"];
                     Session["MemEPassw"] = dt.Rows[0]["Epassw"];
 
-                    Response.Redirect("index.aspx", false);
+                    //Response.Redirect("index.aspx", false);
+                    if (dt.Rows.Count > 0 && dt.Rows[0]["Formno"] != DBNull.Value && !string.IsNullOrEmpty(dt.Rows[0]["Formno"].ToString()))
+                    {
+                        DataTable dt1 = new DataTable();
+                        DataSet Ds1 = new DataSet();
+                        string strSql1 = "Select * from formloginDisclaimerNotice where FormNo=" + dt.Rows[0]["Formno"] + "";
+                        Dt = SqlHelper.ExecuteDataset(constr, CommandType.Text, strSql1).Tables[0];
+                        dt1 = Dt;
+                        if (dt1.Rows.Count == 0)
+                        {
+                            int rowsAffected = 0;
+                            string query = "INSERT INTO formloginDisclaimerNotice(formno) VALUES (@formno)";
+
+                            using (SqlConnection conn = new SqlConnection(constr))
+                            using (SqlCommand cmd = new SqlCommand(query, conn))
+                            {
+                                if (dt == null || dt.Rows.Count == 0)
+                                    throw new Exception("DataTable is empty. Cannot insert disclaimer.");
+
+                                if (dt.Rows[0]["Formno"] == DBNull.Value)
+                                    throw new Exception("Formno is null.");
+
+                                cmd.Parameters.AddWithValue("@formno", dt.Rows[0]["Formno"].ToString());
+
+                                conn.Open();
+                                rowsAffected = cmd.ExecuteNonQuery();
+                                conn.Close();
+                            }
+                            if (rowsAffected > 0)
+                            {
+                                Session["ShowDisclaimer"] = true;
+                                Response.Redirect("index.aspx", false);
+                            }
+
+                        }
+                        else
+                        {
+                            //Response.Redirect("Index.aspx");
+                            Response.Redirect("index.aspx", false);
+                        }
+                    }
                 }
                 cnn.Close();
             }
@@ -327,6 +371,7 @@ public partial class _Default : System.Web.UI.Page
                     Session["Status"] = "OK";
                     Session["IDNo"] = dt.Rows[0]["IDNo"];
                     Session["FormNo"] = dt.Rows[0]["Formno"];
+                   
                     Session["MemName"] = dt.Rows[0]["MemFirstName"] + " " + dt.Rows[0]["MemLastName"];
                     Session["MobileNo"] = dt.Rows[0]["Mobl"];
                     Session["MemKit"] = dt.Rows[0]["KitID"];
@@ -346,7 +391,47 @@ public partial class _Default : System.Web.UI.Page
                     Session["Panno"] = dt.Rows[0]["Panno"];
                     Session["ActivationDate"] = dt.Rows[0]["ActivationDate"];
                     Session["MemEPassw"] = dt.Rows[0]["Epassw"];
-                    Response.Redirect("index.aspx", false);
+                    //Response.Redirect("index.aspx", false);
+                    if (dt.Rows.Count > 0 && dt.Rows[0]["Formno"] != DBNull.Value && !string.IsNullOrEmpty(dt.Rows[0]["Formno"].ToString()))
+                    {
+                        DataTable dt1 = new DataTable();
+                        DataSet Ds1 = new DataSet();
+                        string strSql1 = "Select * from formloginDisclaimerNotice where FormNo=" + dt.Rows[0]["Formno"] + "";
+                        Dt = SqlHelper.ExecuteDataset(constr, CommandType.Text, strSql1).Tables[0];
+                        dt1 = Dt;
+                        if (dt1.Rows.Count == 0)
+                        {
+                            int rowsAffected = 0;
+                            string query = "INSERT INTO formloginDisclaimerNotice(formno) VALUES (@formno)";
+
+                            using (SqlConnection conn = new SqlConnection(constr))
+                            using (SqlCommand cmd = new SqlCommand(query, conn))
+                            {
+                                if (dt == null || dt.Rows.Count == 0)
+                                    throw new Exception("DataTable is empty. Cannot insert disclaimer.");
+
+                                if (dt.Rows[0]["Formno"] == DBNull.Value)
+                                    throw new Exception("Formno is null.");
+
+                                cmd.Parameters.AddWithValue("@formno", dt.Rows[0]["Formno"].ToString());
+
+                                conn.Open();
+                                rowsAffected = cmd.ExecuteNonQuery();
+                                conn.Close();
+                            }
+                            if (rowsAffected > 0)
+                            {
+                                Session["ShowDisclaimer"] = true;
+                                Response.Redirect("index.aspx", false);
+                            }
+
+                        }
+                        else
+                        {
+                            //Response.Redirect("Index.aspx");
+                            Response.Redirect("index.aspx", false);
+                        }
+                    }
                 }
                 cnn.Close();
             }

@@ -816,26 +816,82 @@ public partial class Newjoining1 : System.Web.UI.Page
             System.Net.Mail.MailAddress SendFrom = new System.Net.Mail.MailAddress(Session["CompMail"].ToString());
             System.Net.Mail.MailAddress SendTo = new System.Net.Mail.MailAddress(Email);
             System.Net.Mail.MailMessage MyMessage = new System.Net.Mail.MailMessage(SendFrom, SendTo);
-            StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
-                     "<tr>" +
-                     "<td>" +
-                     "Dear " + MemberName + ",<br /><br />" +
-                     "Welcome to Wealth Factory - Where Opportunities Meet Growth! <br /><br />" +
-                     "We're thrilled to welcome you to the Wealth Factory community! Your account has been successfully created, and you're now part of a trusted platform designed to unlock high-potential opportunities across real estate, media, finance, and beyond.<br />" +
-                     "Here are your secure login details:<br />"+
-                     "<strong>User ID: " + IdNo + "</strong><br />" +
-                     "<strong>Registered Mobile: " + mobl + "</strong><br />" +
-                     "<strong>Login Password: " + Password + "</strong><br />" +
-                     "<strong>Transaction Password: " + Password + "</strong><br /><br />" +
-                     "Please store these credentials securely and do not share them with anyone. <br /><br />" +
-                     "Login to your dashboard and explore verified investment options. <br />If you need help, our support team is ready to assist you at every step. <br /> <br />" +
-                     "Let's build something extraordinary together. <br />" +
-                     "Warm wishes, <br />Team Wealth Factory" +
-                     "<br />" +
-                     "<br />" +
-                     "</td>" +
-                     "</tr>" +
-                     "</table>";
+            //StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
+            //         "<tr>" +
+            //         "<td>" +
+            //         "Dear " + MemberName + ",<br /><br />" +
+            //         "Welcome to Wealth Factory - Where Opportunities Meet Growth! <br /><br />" +
+            //         "We're thrilled to welcome you to the Wealth Factory community! Your account has been successfully created, and you're now part of a trusted platform designed to unlock high-potential opportunities across real estate, media, finance, and beyond.<br />" +
+            //         "Here are your secure login details:<br />"+
+            //         "<strong>User ID: " + IdNo + "</strong><br />" +
+            //         "<strong>Registered Mobile: " + mobl + "</strong><br />" +
+            //         "<strong>Login Password: " + Password + "</strong><br />" +
+            //         "<strong>Transaction Password: " + Password + "</strong><br /><br />" +
+            //         "Please store these credentials securely and do not share them with anyone. <br /><br />" +
+            //         "Login to your dashboard and explore verified investment options. <br />If you need help, our support team is ready to assist you at every step. <br /> <br />" +
+            //         "Let's build something extraordinary together. <br />" +
+            //         "Warm wishes, <br />Team Wealth Factory" +
+            //         "<br />" +
+            //         "<br />" +
+            //         "</td>" +
+            //         "</tr>" +
+            //         "</table>";
+            StrMsg = @"
+<table width='100%' cellpadding='0' cellspacing='0' border='0' style='font-family:Verdana, Arial, Helvetica, sans-serif; background-color:#f9f9f9; padding:20px;'>
+  <tr>
+    <td align='center'>
+      <table width='600' cellpadding='20' cellspacing='0' border='0' style='background-color:#ffffff; border:1px solid #e0e0e0; border-radius:8px;'>
+        <tr>
+          <td style='font-size:14px; color:#333333; line-height:22px;'>
+            
+            <h2 style='font-size:20px; margin:0; font-weight:bold;'>
+              Welcome to <span style='color:#00a36c;'>Wealth Factory</span>
+            </h2>
+            
+            <p style='margin-top:15px; font-size:14px;'>
+              Dear <strong>" + MemberName + @"</strong>,
+            </p>
+            
+            <p>
+              We're thrilled to welcome you to the <strong>Wealth Factory</strong> community! <br/>
+              Your account has been successfully created, and you're now part of a trusted platform designed to unlock high-potential opportunities across real estate, media, finance, and beyond.
+            </p>
+            
+            <h3 style='margin-top:20px; font-size:15px; color:#333333;'>Your Secure Login Details:</h3>
+            <ul style='font-size:14px; color:#000000; line-height:24px; padding-left:20px;'>
+              <li><strong>User ID:</strong> " + IdNo + @"</li>
+              <li><strong>Registered Mobile:</strong> " + mobl + @"</li>
+              <li><strong>Login Password:</strong> " + Password + @"</li>
+              <li><strong>Transaction Password:</strong> " + Password + @"</li>
+            </ul>
+            
+            <p style='margin-top:20px; font-size:13px; color:#666666;'>
+              Please store these credentials securely and do not share them with anyone.
+              <br/><br/>
+              Log in to your dashboard and explore verified investment opportunities tailored for you.
+            </p>
+            
+            <p style='margin-top:20px; font-size:13px;'>
+              If you need help, our support team is always ready to assist: 
+              <a href='mailto:support@wealthfactory.com' style='color:#00a36c; text-decoration:none;'>support@wealthfactory.com</a>
+            </p>
+            
+            <p style='margin-top:25px; font-size:14px; font-weight:bold; color:#333333;'>
+              Let's build something extraordinary together.
+            </p>
+            
+            <p style='margin-top:15px; font-size:14px;'>
+              Warm wishes, <br/>
+              <strong>Team Wealth Factory</strong>
+            </p>
+            
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>";
+
 
             MyMessage.Subject = "Welcome to Wealth Factory - Your Account Is Now Active!";
             MyMessage.Body = StrMsg;
@@ -1859,24 +1915,89 @@ public partial class Newjoining1 : System.Web.UI.Page
             MailAddress SendTo = new MailAddress(txtEMailId.Text);
             MailMessage MyMessage = new MailMessage(SendFrom, SendTo);
             mail.Subject = "Wealth Factory Account Registration!";
-            StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
-                     "<tr>" +
-                     "<td>" +
-                     "Dear "+txtFrstNm.Text + ",<br />" +
-                     "We appreciate your interest in joining Wealth Factory <br />" +
-                     "To proceed with the registration of your account, kindly verify your email address by entering the One-Time Password (OTP) provided below:<br />" +
-                     "One-Time Password (OTP): <span style=\"font-weight: bold;\">" + otp + "</span> (valid for 5 minutes)." +
-                     "<br />" +
-                     "This code is valid for a limited time and is strictly confidential. For your security, please refrain from sharing it with anyone."+
-                       "<br />" +
-                     "If you did not initiate this request, no action is required. Your information remains secure and unchanged." +
-                       "<br />" +
-                     "If you have any questions or require assistance, please do not hesitate to contact our support team at support@wealthfactory.com" +
-                            "<br />" +
-                     "Regards, <br />Client Relations Team<br />Wealth Factory" +
-                     "</td>" +
-                     "</tr>" +
-                    "</table>";
+            //StrMsg = "<table style=\"margin:0; padding:10px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; line-height:23px; text-align:justify;width:100%\">" +
+            //         "<tr>" +
+            //         "<td>" +
+            //         "Dear <span style=\"font-weight: bold;\">" + txtFrstNm.Text + "</span>,<br />" +
+            //         "We appreciate your interest in joining <span style=\"font-weight: bold;\">Wealth Factory</span> <br />" +
+            //         "To proceed with the registration of your account, kindly verify your email address by entering the One-Time Password (OTP) provided below:<br />" +
+            //         "One-Time Password (OTP): <span style=\"font-weight: bold;\">" + otp + "</span> (valid for 5 minutes)." +
+            //         "<br />" +
+            //         "This code is valid for a limited time and is strictly confidential. For your security, please refrain from sharing it with anyone."+
+            //           "<br />" +
+            //         "If you did not initiate this request, no action is required. Your information remains secure and unchanged." +
+            //           "<br />" +
+            //         "If you have any questions or require assistance, please do not hesitate to contact our support team at support@wealthfactory.com" +
+            //                "<br />" +
+            //         "Regards, <br />Client Relations Team<br />Wealth Factory" +
+            //         "</td>" +
+            //         "</tr>" +
+            //        "</table>";
+            StrMsg = @"
+<table style='width:100%; font-family:Verdana, Arial, sans-serif; font-size:14px; line-height:22px; color:#333;'>
+  <tr>
+    <td align='center'>
+      <table style='width:600px; background:#ffffff; border:1px solid #ddd; border-radius:6px; overflow:hidden;'>
+        
+        <!-- Header -->
+        <tr>
+          <td style='background:#0056d6; color:#fff; text-align:center; padding:15px; font-size:18px; font-weight:bold;'>
+            Wealth Factory - Email Verification
+          </td>
+        </tr>
+        
+        <!-- Body -->
+        <tr>
+          <td style='padding:25px;'>
+            <p>Dear <b>" + txtFrstNm.Text + @"</b>,</p>
+            <p>
+              Thank you for your interest in joining <b>Wealth Factory</b>.
+              <br /><br />
+              To complete your account registration, please verify your email address using the One-Time Password (OTP) below:
+            </p>
+
+            <!-- OTP Box -->
+            <div style='text-align:center; margin:20px 0;'>
+              <div style='display:inline-block; background:#f0f4ff; border:1px solid #c6d4f7; 
+                           padding:12px 30px; font-size:22px; font-weight:bold; color:#0056d6; 
+                           border-radius:6px; letter-spacing:2px;'>
+                " + otp + @"
+              </div>
+            </div>
+
+            <p>
+              This code is valid for <b>5 minutes</b> and is strictly confidential. 
+              For your security, please do not share it with anyone.
+            </p>
+
+            <p>
+              If you did not initiate this request, no action is required. Your account remains secure.
+            </p>
+
+            <p>
+              If you have any questions, feel free to contact our support team at 
+              <a href='mailto:support@wealthfactory.com' style='color:#0056d6;'>support@wealthfactory.com</a>.
+            </p>
+
+            <p>
+              Regards, <br />
+              <b>Client Relations Team</b><br />
+              Wealth Factory
+            </p>
+          </td>
+        </tr>
+        
+        <!-- Footer -->
+        <tr>
+          <td style='background:#f8f8f8; text-align:center; padding:12px; font-size:12px; color:#888;'>
+            © 2025 Wealth Factory. All rights reserved.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>";
+
 
             MyMessage.Subject = "Wealth Factory Account Registration!";
             MyMessage.Body = StrMsg;
