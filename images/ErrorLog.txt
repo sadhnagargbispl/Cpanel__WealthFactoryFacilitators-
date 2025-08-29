@@ -1240,3 +1240,33 @@ Thread was being aborted.
 http://localhost:55024/index.aspx:  27-Aug-2025 06:02:09:074
 Thread was being aborted.
 --------------------------------------------------------
+http://localhost:55024/index.aspx:  29-Aug-2025 04:41:33:842 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'TotalDays'.
+--------------------------------------------------------
+http://localhost:55024/index.aspx:  29-Aug-2025 04:41:33:900
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55024/index.aspx:  29-Aug-2025 04:48:45:537 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'RewardName'.
+--------------------------------------------------------
+http://localhost:55024/index.aspx:  29-Aug-2025 04:48:45:637
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55024/index.aspx:  29-Aug-2025 04:48:52:533
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55024/index.aspx:  29-Aug-2025 04:53:53:140 
+DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EndDate'.
+--------------------------------------------------------
+http://localhost:55024/index.aspx:  29-Aug-2025 04:53:53:173
+Thread was being aborted.
+--------------------------------------------------------
+http://localhost:55024/index.aspx:  29-Aug-2025 05:04:55:831
+Procedure or function 'Sp_NextRewardtimer' expects parameter '@Formno', which was not supplied.
+--------------------------------------------------------
+http://localhost:55024/Index.aspx:  29-Aug-2025 05:08:35:881
+Object reference not set to an instance of an object.
+--------------------------------------------------------
+http://localhost:55024/index.aspx:  29-Aug-2025 05:40:52:313
+Thread was being aborted.
+--------------------------------------------------------

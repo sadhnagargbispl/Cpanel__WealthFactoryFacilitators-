@@ -41,6 +41,8 @@ public partial class Index : System.Web.UI.Page
                         Session["ShowDisclaimer"] = false; // Only first time
                     }
                     LoadTeam();
+                    //NextReward();
+                    BindNextReward();
                 }
             }
             else
@@ -91,6 +93,51 @@ public partial class Index : System.Web.UI.Page
             lblBody.Text = Das.Tables[0].Rows[0]["Body"].ToString();
         }
     }
+    //private void NextReward()
+    //{
+    //    try
+    //    {
+    //        string s = "Exec Sp_NextRewardtimer '" + Session["Formno"] + "'";
+    //        DataTable Dt = new DataTable();
+    //        Dt = Obj.GetData(s);
+
+    //        if (Dt.Rows.Count > 0)
+    //        {
+    //            Session["RemainDays"] = Dt.Rows[0]["Completed Pair"];
+    //            rptNextReward.DataSource = Dt;
+    //            rptNextReward.DataBind();
+    //        }
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        string path = HttpContext.Current.Request.Url.AbsoluteUri;
+    //        string text = path + ":  " + DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss:fff ") + Environment.NewLine;
+    //        Obj.WriteToFile(text + ex.Message);
+    //        Response.Write("Try later.");
+    //        Response.Write(ex.Message);
+    //        Response.End();
+    //    }
+    //}
+    protected void BindNextReward()
+{
+        string s = "Exec Sp_NextRewardtimer '" + Session["Formno"] + "'";
+        DataTable Dt = new DataTable();
+        Dt = Obj.GetData(s);
+
+        if (Dt.Rows.Count > 0)
+    {
+       lblRewardName.Text =Dt.Rows[0]["Reward"].ToString();
+        //lblPairs.Text = Dt.Rows[0]["Pair"].ToString();
+
+        // End date calculate
+        DateTime startDate = Convert.ToDateTime(Dt.Rows[0]["StartDate"]);
+        int totalDays = Convert.ToInt32(Dt.Rows[0]["pair"]);
+        DateTime endDate = startDate.AddDays(totalDays);
+
+        // EndDate ko client side javascript me bhejna
+        hdnEndDate.Value = endDate.ToString("yyyy-MM-ddTHH:mm:ss");
+    }
+}
     protected void btnProceed_Click(object sender, EventArgs e)
     {
         string subject = lblTitle.Text;
@@ -184,22 +231,6 @@ public partial class Index : System.Web.UI.Page
         smtp.Credentials = new System.Net.NetworkCredential(Session["CompMail"].ToString(), Session["MailPass"].ToString());
         smtp.Send(MyMessage);
         //return true;
-        //// Send Email
-        //System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
-        //mail.To.Add("user@example.com");  // Replace with login user email
-        //mail.From = new System.Net.Mail.MailAddress("noreply@yourdomain.com");
-        //mail.Subject = subject;
-        //mail.Body = body;
-        //mail.IsBodyHtml = false;
-
-        //System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient();
-        //smtp.Host = "smtp.yourserver.com"; // Replace with SMTP server
-        //smtp.Port = 587;
-        //smtp.Credentials = new System.Net.NetworkCredential("username", "password");
-        //smtp.EnableSsl = true;
-        //smtp.Send(mail);
-
-        // Redirect to Home/Index page after sending mail
         Response.Redirect("Index.aspx",false);
         
     }

@@ -14,95 +14,94 @@
             padding-bottom: 0px !important;
             text-align: right;
         }
-    /* Overlay with Flexbox Centering */
-.modal {
-    /*position: fixed;*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-   
-    display: none;             /* initially hidden */
-    /*align-items: center;*/         /* vertical center */
-    /*justify-content: center;*/     /* horizontal center */
-     z-index: 9999;
-}
+        /* Overlay with Flexbox Centering */
+        .modal {
+            /*position: fixed;*/
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            display: none; /* initially hidden */
+            /*align-items: center;*/ /* vertical center */
+            /*justify-content: center;*/ /* horizontal center */
+            z-index: 9999;
+        }
 
-/* Modal Box */
-.modal-content {
-    background: #fff;
-    width: 60%;
-    margin:auto;
-    /*max-width: 700px;*/
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    max-height: 85vh;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    animation: fadeIn 0.3s ease-in-out;
-}
+        /* Modal Box */
+        .modal-content {
+            background: #fff;
+            width: 60%;
+            margin: auto;
+            /*max-width: 700px;*/
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
 
-/* Header */
-.modal-header {
-    background: #00a86b; /* Green header */
-    color: #fff;
-    padding: 12px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* Header */
+        .modal-header {
+            background: #00a86b; /* Green header */
+            color: #fff;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.modal-header h3 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-}
+            .modal-header h3 {
+                margin: 0;
+                font-size: 18px;
+                font-weight: bold;
+            }
 
-.close-btn {
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #fff;
-}
+        .close-btn {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #fff;
+        }
 
-.close-btn:hover {
-    color: #ffcccc;
-}
+            .close-btn:hover {
+                color: #ffcccc;
+            }
 
-/* Body */
-.modal-body {
-    padding: 20px;
-    color: #333;
-    overflow-y: auto;
-    flex: 1;
-}
+        /* Body */
+        .modal-body {
+            padding: 20px;
+            color: #333;
+            overflow-y: auto;
+            flex: 1;
+        }
 
-/* Footer */
-.modal-footer {
-    padding: 15px;
-    border-top: 1px solid #ddd;
-    background: #f9f9f9;
-}
+        /* Footer */
+        .modal-footer {
+            padding: 15px;
+            border-top: 1px solid #ddd;
+            background: #f9f9f9;
+        }
 
-.btn-proceed {
-    background: #00a86b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 15px;
-}
+        .btn-proceed {
+            background: #00a86b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
 
-.btn-proceed:hover {
-    background: #008f5a;
-}
+            .btn-proceed:hover {
+                background: #008f5a;
+            }
 
-/* Animation */
-/*@keyframes fadeIn {
+        /* Animation */
+        /*@keyframes fadeIn {
     from {opacity:0; transform: scale(0.95);}
     to {opacity:1; transform: scale(1);}
 }*/
@@ -168,68 +167,69 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-   <%-- <asp:ScriptManager ID="ScriptManager1" runat="server" />--%>
-<%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <%-- <asp:ScriptManager ID="ScriptManager1" runat="server" />--%>
+    <%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>--%>
-        <!-- Overlay -->
-        <div id="DisclaimerModal" runat="server" class="modal" style="display:none;">
-            <%--<div class="modal-overlay"></div>--%>
+    <!-- Overlay -->
+    <div id="DisclaimerModal" runat="server" class="modal" style="display: none;">
+        <%--<div class="modal-overlay"></div>--%>
 
-            <!-- Modal Box -->
-            <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header">
-                    <h3><asp:Label ID="lblTitle" runat="server" Text=""></asp:Label></h3>
-                   <%-- <span class="close-btn" onclick="closeDisclaimer()">&times;</span>--%>
+        <!-- Modal Box -->
+        <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header">
+                <h3>
+                    <asp:Label ID="lblTitle" runat="server" Text=""></asp:Label></h3>
+                <%-- <span class="close-btn" onclick="closeDisclaimer()">&times;</span>--%>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body">
+                <p style="white-space: pre-line;">
+                    <asp:Label ID="lblBody" runat="server"></asp:Label>
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+                <div class="col-sm-12 text-center">
+                    <label>
+                        <asp:CheckBox ID="chkterms" runat="server" onclick="DivOnOff();" TabIndex="53"></asp:CheckBox>
+                        I Accept
+                    </label>
                 </div>
 
-                <!-- Body -->
-                <div class="modal-body">
-                    <p style="white-space:pre-line;">
-                        <asp:Label ID="lblBody" runat="server"></asp:Label>
-                    </p>
-                </div>
-
-                <!-- Footer -->
-                <div class="modal-footer">
-                    <div class="col-sm-12 text-center">
-                        <label>
-                            <asp:CheckBox ID="chkterms" runat="server" onclick="DivOnOff();" TabIndex="53"></asp:CheckBox>
-                            I Accept
-                        </label>
-                    </div>
-
-                    <div id="DivTerms" style="display:none; text-align:center; margin-top:10px;">
-                        <asp:Button ID="btnProceed" runat="server" Text="Proceed" CssClass="btn-proceed" OnClick="btnProceed_Click" />
-                    </div>
+                <div id="DivTerms" style="display: none; text-align: center; margin-top: 10px;">
+                    <asp:Button ID="btnProceed" runat="server" Text="Proceed" CssClass="btn-proceed" OnClick="btnProceed_Click" />
                 </div>
             </div>
         </div>
-   <%-- </ContentTemplate>
+    </div>
+    <%-- </ContentTemplate>
 </asp:UpdatePanel>--%>
 
-<script type="text/javascript">
-    // Show modal
-    function showDisclaimer() {
-        document.getElementById('<%= DisclaimerModal.ClientID %>').style.display = "block";
-    }
-
-    // Hide modal on Close
-    function closeDisclaimer() {
-        document.getElementById('<%= DisclaimerModal.ClientID %>').style.display = "none";
-    }
-
-    // Show/hide Proceed button when checkbox is checked
-    function DivOnOff() {
-        var chk = document.getElementById('<%= chkterms.ClientID %>');
-        var div = document.getElementById('DivTerms');
-        if (chk.checked) {
-            div.style.display = "block";
-        } else {
-            div.style.display = "none";
+    <script type="text/javascript">
+        // Show modal
+        function showDisclaimer() {
+            document.getElementById('<%= DisclaimerModal.ClientID %>').style.display = "block";
         }
-    }
-</script>
+
+        // Hide modal on Close
+        function closeDisclaimer() {
+            document.getElementById('<%= DisclaimerModal.ClientID %>').style.display = "none";
+        }
+
+        // Show/hide Proceed button when checkbox is checked
+        function DivOnOff() {
+            var chk = document.getElementById('<%= chkterms.ClientID %>');
+            var div = document.getElementById('DivTerms');
+            if (chk.checked) {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+    </script>
     <div class="content-wrapper" style="min-height: 778px;">
 
         <script>
@@ -474,36 +474,131 @@
                 </div>
             </div>
             <div class="row">
-                <div class="box box-info box-solid">
-                    <div class="box-header with-border">
-                        <i class="ion ion-clipboard"></i>
-                        <h3 class="box-title">LATEST INFORMATION</h3>
-                        <div class="box-tools pull-right">
-                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <div class="col-md-6 col-xs-6">
+                    <div class="box box-info box-solid">
+                        <div class="box-header with-border">
+                            <i class="ion ion-clipboard"></i>
+                            <h3 class="box-title">LATEST INFORMATION</h3>
+                            <div class="box-tools pull-right">
+                                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="box-body">
-                        <div class="box-comment" style="cursor: pointer;">
-                            <marquee loop="true" behavior="scroll" direction="up" scrolldelay="60" scrollamount="2" style="margin-top: 0px; height: 250px;" onmouseover="this.stop();" onmouseout="this.start();">
+                        <div class="box-body">
+                            <div class="box-comment" style="cursor: pointer;">
+                                <marquee loop="true" behavior="scroll" direction="up" scrolldelay="60" scrollamount="2" style="margin-top: 0px; height: 250px;" onmouseover="this.stop();" onmouseout="this.start();">
 
-                                <asp:Repeater runat="server" ID="RptNews">
-                                    <ItemTemplate>
+                                    <asp:Repeater runat="server" ID="RptNews">
+                                        <ItemTemplate>
 
-                                        <div class="comment-text" style="color: black;">
-                                            <span class="username" style="color: #c3602b;">
-                                                <h4><i class="fa fa-user"></i><%#Eval("NewsDate")%> </h4>
-                                            </span>
+                                            <div class="comment-text" style="color: black;">
+                                                <span class="username" style="color: #c3602b;">
+                                                    <h4><i class="fa fa-user"></i><%#Eval("NewsDate")%> </h4>
+                                                </span>
 
-                                            <p><%#Eval("NewsDetail")%></p>
-                                        </div>
-                                        <hr />
-                                    </ItemTemplate>
-                                </asp:Repeater>
+                                                <p><%#Eval("NewsDetail")%></p>
+                                            </div>
+                                            <hr />
+                                        </ItemTemplate>
+                                    </asp:Repeater>
 
-                            </marquee>
+                                </marquee>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="box box-info box-solid">
+                        <div class="box-header with-border">
+                            <i class="ion ion-clipboard"></i>
+                            <h3 class="box-title"> <asp:Label ID="lblRewardName" runat="server" Text=""></asp:Label>
+                            </h3>
+                            <div class="box-tools pull-right">
+                                <button class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="box-body text-center">
+
+                            <h4 class="text-muted d-block mb-3">Startup Matching Reward</h4>
+
+                            <asp:HiddenField ID="hdnEndDate" runat="server" />
+
+                            <!-- Timer in one row -->
+                            <div class="timer-container">
+                                <div class="timer-box">
+                                    <div id="days" class="timer-value">0</div>
+                                    <div class="timer-label">Days</div>
+                                </div>
+                                <div class="timer-box">
+                                    <div id="hours" class="timer-value">0</div>
+                                    <div class="timer-label">Hours</div>
+                                </div>
+                                <div class="timer-box">
+                                    <div id="minutes" class="timer-value">0</div>
+                                    <div class="timer-label">Minutes</div>
+                                </div>
+                                <div class="timer-box">
+                                    <div id="seconds" class="timer-value">0</div>
+                                    <div class="timer-label">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .timer-container {
+                        display: flex;
+                        justify-content: center;
+                        gap: 30px; /* space between items */
+                        flex-wrap: wrap;
+                    }
+
+                    .timer-box {
+                        text-align: center;
+                        min-width: 60px;
+                    }
+
+                    .timer-value {
+                        font-size: 36px;
+                        font-weight: bold;
+                        color: blue;
+                    }
+
+                    .timer-label {
+                        font-size: 14px;
+                        color: #000000;
+                        margin-top: 4px;
+                    }
+                </style>
+
+                <script>
+                    var endDate = new Date(document.getElementById("<%= hdnEndDate.ClientID %>").value);
+
+                    function updateTimer() {
+                        var now = new Date().getTime();
+                        var distance = endDate - now;
+
+                        if (distance < 0) {
+                            ["days", "hours", "minutes", "seconds"].forEach(id => document.getElementById(id).innerHTML = "0");
+                            return;
+                        }
+
+                        var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var s = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        document.getElementById("days").innerHTML = d;
+                        document.getElementById("hours").innerHTML = h;
+                        document.getElementById("minutes").innerHTML = m;
+                        document.getElementById("seconds").innerHTML = s;
+                    }
+
+                    setInterval(updateTimer, 1000);
+                    updateTimer();
+                </script>
             </div>
         </section>
 
@@ -521,7 +616,7 @@
                 var tooltip = document.getElementById("refcopy");
                 tooltip.innerHTML = "Copy to clipboard";
             }
-           
+
         </script>
 
     </div>
