@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.master" AutoEventWireup="true" CodeFile="AddFund.aspx.cs" Inherits="AddFund" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.master" AutoEventWireup="true" CodeFile="AddFund.aspx.cs" Inherits="AddFund" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
@@ -70,12 +70,22 @@
                                             </div>
 
                                             <!-- Right Column: QR Code (col-4) -->
-                                            <div class="col-md-6 col-12 text-center">
+
+                                            <div class="col-md-6 col-12">
                                                 <br />
-                                                <div class="form-group" id="div1" runat="server" style="text-align: center;">
+                                                <div class="form-group" id="divqrcode" runat="server" visible="false">
                                                     <img class="img-fluid" src="assets/img/QRcode.jpeg" alt="QR Code" width="320" />
                                                 </div>
+
+                                                <div class="form-group" id="divbank" runat="server" visible="false">
+                                                    <h5><strong>Bank Details</strong></h5>
+                                                    <p><strong>A/c Name:</strong> Wealth Factory Facilitators OPC Private Limited</p>
+                                                    <p><strong>A/c No:</strong> 144927000000325</p>
+                                                    <p><strong>IFSC Code:</strong> YESB0001449</p>
+                                                    <p><strong>Branch:</strong> Sec-74 Gurugram</p>
+                                                </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>

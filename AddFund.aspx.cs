@@ -1,4 +1,4 @@
-﻿using AjaxControlToolkit;
+using AjaxControlToolkit;
 using AjaxControlToolkit.HtmlEditor.ToolbarButtons;
 using DocumentFormat.OpenXml.Bibliography;
 using DocumentFormat.OpenXml.Spreadsheet;
@@ -61,6 +61,16 @@ public partial class AddFund : System.Web.UI.Page
                 {
                     HdnCheckTrnns.Value = GenerateRandomStringActive(6);
                     FillPaymode();
+                    if (DdlPaymode.SelectedValue == "6")
+                    {
+                        divbank.Visible = true;
+                        divqrcode.Visible = false;
+                    }
+                    else if (DdlPaymode.SelectedValue == "7")
+                    {
+                        divbank.Visible = false;
+                        divqrcode.Visible = true;
+                    }
                     CheckVisible();
                 }
             }
@@ -181,6 +191,16 @@ public partial class AddFund : System.Web.UI.Page
             //    divImage.Visible = true;
 
             LblDDNo.Text = Dr[0]["TransNoLbl"].ToString(); LblDDDate.Text = Dr[0]["TransDateLbl"].ToString();
+            if (DdlPaymode.SelectedValue == "6")
+            {
+                divbank.Visible = true;
+                divqrcode.Visible = false;
+            }
+            else if (DdlPaymode.SelectedValue == "7")
+            {
+                divbank.Visible = false;
+                divqrcode.Visible = true;
+            }
         }
     }
     private string DisableTheButton(System.Web.UI.Control pge, System.Web.UI.Control btn)
